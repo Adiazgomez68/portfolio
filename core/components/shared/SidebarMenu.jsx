@@ -1,6 +1,6 @@
 const SideBarMenu = () => {
   return (
-    <div className="absolute top-0 right-0 w-full h-full bg-slate-800">
+    <div className="fixed top-0 right-0 w-full h-full bg-slate-800">
       <div></div>
     </div>
   );
