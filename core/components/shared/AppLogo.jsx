@@ -1,6 +1,6 @@
 const AppLogo = ({ className }) => {
   return (
-    <picture className={`flex items-center w-full pl-5 ${className}`}>
+    <picture className={`flex items-center w-full  ${className}`}>
       <img
         src="/public/favicon.ico"
         alt="Logo portfolio"

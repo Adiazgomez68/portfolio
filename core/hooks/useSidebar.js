@@ -1,7 +1,8 @@
-import { useState } from "react";
+import {useAtom} from "jotai"
+import {sidebarMenuAtom} from "../atoms/sidebar";
 
 const useSidebar = () => {
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useAtom(sidebarMenuAtom);
 
     const open = () => setIsOpen(true);
     const close = () => setIsOpen(false);

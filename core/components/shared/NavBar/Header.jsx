@@ -13,7 +13,7 @@ const Header = ({ className }) => {
         className={`sticky flex items-center w-full sm:py-0 py-5 bg-light ${className}`}
       >
         <Wrapper>
-          <AppLogo />
+          <AppLogo className="pl-5" />
 
           <nav className="items-center justify-end hidden w-full pr-5 sm:flex">
             <ul className="flex justify-evenly">

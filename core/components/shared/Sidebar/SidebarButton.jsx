@@ -2,13 +2,11 @@ import MenuIcon from "../icons/MenuIcon";
 import useSidebar from "../../../hooks/useSidebar";
 
 const SidebarButton = () => {
-  const { isOpen, open } = useSidebar();
-
-  console.log(isOpen);
+  const { open } = useSidebar();
 
   return (
     <div>
-      <button onClick={open}>
+      <button onClick={open} className="duration-200 active:scale-75">
         <MenuIcon />
       </button>
     </div>
