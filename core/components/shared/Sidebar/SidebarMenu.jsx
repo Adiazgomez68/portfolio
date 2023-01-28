@@ -10,7 +10,7 @@ const SidebarMenu = () => {
 
   return (
     <GlassContainer
-      className={`fixed top-0 z-40 w-full h-screen sm:hidden duration-300 ${
+      className={`fixed top-0 z-40 backdrop-blur-lg w-full h-screen sm:hidden duration-300 ${
         isOpen ? "-translate-x-0" : "-translate-x-full"
       }`}
     >
