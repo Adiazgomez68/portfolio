@@ -3,7 +3,6 @@ import GlassContainer from "../GlassContainer";
 import NavBarLink from "../NavBar/NavBarLink";
 import AppLogo from "../AppLogo";
 import useSidebar from "../../../hooks/useSidebar";
-import Close from "../icons/Close";
 import CloseSidebarButton from "./CloseSidebarButton";
 
 const SidebarMenu = () => {
@@ -17,12 +16,18 @@ const SidebarMenu = () => {
     >
       <nav className="fixed top-0 items-center w-full h-screen ">
         <div className="flex items-center justify-between px-5 my-5">
-          <AppLogo />
+          <AppLogo className="w-40" />
           <CloseSidebarButton />
         </div>
-        <ul className="divide-y ">
+        <ul className="px-5 divide-y">
           {links.map((link, index) => (
-            <NavBarLink onClick={close} key={index} link={link} index={index} />
+            <NavBarLink
+              className="px-1 py-3"
+              onClick={close}
+              key={index}
+              link={link}
+              index={index}
+            />
           ))}
         </ul>
       </nav>

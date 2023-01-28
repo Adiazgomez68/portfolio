@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { links } from "../../../utils/routes";
 import Wrapper from "../Wrapper";
 import GlassContainer from "../GlassContainer";
@@ -10,10 +9,10 @@ const Header = ({ className }) => {
   return (
     <GlassContainer className="sticky top-0 z-10 bg-light">
       <header
-        className={`sticky flex items-center w-full sm:py-0 py-5 bg-light ${className}`}
+        className={`sticky flex items-center w-full sm:py-0 py-2 bg-light ${className}`}
       >
         <Wrapper>
-          <AppLogo className="pl-5" />
+          <AppLogo className="pl-5 w-52 sm:w-48" />
 
           <nav className="items-center justify-end hidden w-full pr-5 sm:flex">
             <ul className="flex justify-evenly">

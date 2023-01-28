@@ -1,10 +1,12 @@
 import Link from "next/link";
 
-const NavBarLink = ({ link, index, onClick }) => {
+const NavBarLink = ({ link, index, onClick, className = "" }) => {
   return (
     <div>
       <Link key={index} href={link.url} onClick={onClick}>
-        <li className="p-5 font-light text-gray-800 duration-300 text-md hover:text-green-400">
+        <li
+          className={`p-5 font-normal text-gray-800 duration-300 text-md hover:text-green-400 ${className}`}
+        >
           {link.name}
         </li>
       </Link>

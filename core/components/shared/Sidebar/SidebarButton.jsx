@@ -5,11 +5,9 @@ const SidebarButton = () => {
   const { open } = useSidebar();
 
   return (
-    <div>
-      <button onClick={open} className="duration-200 active:scale-75">
-        <MenuIcon />
-      </button>
-    </div>
+    <button onClick={open} className="duration-200 active:scale-75">
+      <MenuIcon className="text-primary" />
+    </button>
   );
 };
 
