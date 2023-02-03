@@ -2,14 +2,15 @@ import Image from "next/image";
 import { MainTitle } from "../shared/Titles";
 import Wrapper from "../shared/Wrapper";
 import Logo from "../../../public/images/Logo.svg";
+import HorizontalLine from "../shared/icons/HorizontalLine";
 
 const Intro = () => {
   return (
     <section id="intro">
-      <Wrapper className="px-5">
-        <div className="grid grid-cols-1 lg:grid-cols-2">
+      <Wrapper className="px-5 pb-5">
+        <div className="grid grid-cols-1 py-4 space-y-5 lg:grid-cols-2">
           <div className={Logo}>
-            {/* <Image src="" width={100} height={0} alt="Profile" /> */}
+            <Image src="" width={100} height={0} alt="Profile" />
           </div>
           <div className="flex flex-col items-center space-y-1 text-primary">
             <MainTitle text="Andrés Díaz" className="text-primary" />
@@ -25,6 +26,7 @@ const Intro = () => {
           </div>
         </div>
       </Wrapper>
+      <HorizontalLine className="" />
     </section>
   );
 };

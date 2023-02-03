@@ -10,6 +10,7 @@ specifiers:
   postcss: ^8.4.21
   react: 18.2.0
   react-dom: 18.2.0
+  react-multi-carousel: ^2.8.2
   tailwindcss: ^3.2.4
 
 dependencies:
@@ -20,6 +21,7 @@ dependencies:
   next: 13.1.5_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-multi-carousel: 2.8.2
 
 devDependencies:
   autoprefixer: 10.4.13_postcss@8.4.21
@@ -2023,6 +2025,11 @@ packages:
 
   /react-is/16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
+    dev: false
+
+  /react-multi-carousel/2.8.2:
+    resolution: {integrity: sha512-M9Y7DfAp8bA/r6yexttU6RLA7uyppje4c0ELRuCHZWswH+u7nr0uVP6qHNPjc4XGOEY1MYFOb5nBg7JvoKutuQ==}
+    engines: {node: '>=8'}
     dev: false
 
   /react/18.2.0:
