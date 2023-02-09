@@ -1,6 +1,6 @@
 const BlurContainer = ({ children, className = "" }) => {
   return (
-    <div className={`w-full backdrop-blur-md ${className}`}>{children}</div>
+    <div className={`w-full backdrop-blur-lg ${className}`}>{children}</div>
   );
 };
 

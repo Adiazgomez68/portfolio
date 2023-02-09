@@ -7,9 +7,9 @@ export const SubTitle = ({ text = "", className = "" }) => {
 };
 
 export const ThirdTitle = ({ text = "", className = "" }) => {
-  return <h3 className={`${className} font-bold text-xl`}> {text} </h3>;
+  return <h3 className={`${className} font-semibold text-xl`}> {text} </h3>;
 };
 
 export const ForthTitle = ({ text = "", className = "" }) => {
-  return <h3 className={`${className} font-bold text-md`}> {text} </h3>;
+  return <h3 className={`${className} font-bold text-[18px]`}> {text} </h3>;
 };

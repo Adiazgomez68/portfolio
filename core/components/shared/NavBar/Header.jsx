@@ -7,7 +7,7 @@ import SidebarButton from "../Sidebar/SidebarButton";
 
 const Header = ({ className }) => {
   return (
-    <GlassContainer className="sticky top-0 z-10 bg-light">
+    <GlassContainer className="fixed top-0 z-10 bg-light">
       <header
         className={`flex items-center w-full sm:py-0 py-2 bg-light ${className}`}
       >

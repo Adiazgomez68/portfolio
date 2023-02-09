@@ -39,7 +39,7 @@ export const CustomRightArrow = ({ onClick, ...rest }) => {
   return (
     <button
       onClick={() => onClick()}
-      className="absolute z-10 p-1 rounded text-[#9F9F9F] right-2 duration-300 hover:bg-gray-100"
+      className="absolute p-1 rounded text-[#9F9F9F] right-2 duration-300 hover:bg-gray-100"
     >
       <IoIosArrowForward />
     </button>
@@ -55,7 +55,7 @@ export const CustomLeftArrow = ({ onClick, ...rest }) => {
   return (
     <button
       onClick={() => onClick()}
-      className="absolute z-10 p-1 rounded text-[#9F9F9F] left-2 duration-300 hover:bg-gray-100"
+      className="absolute p-1 rounded text-[#9F9F9F] left-2 duration-300 hover:bg-gray-100"
     >
       <IoIosArrowBack />
     </button>

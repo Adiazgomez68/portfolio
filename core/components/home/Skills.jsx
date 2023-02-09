@@ -5,11 +5,12 @@ import { skills } from "../../utils/items";
 import { CustomLeftArrow, CustomRightArrow } from "../shared/icons/Arrows";
 import { ForthTitle, ThirdTitle } from "../shared/Titles";
 import Wrapper from "../shared/Wrapper";
+import HorizontalLine from "../shared/icons/HorizontalLine";
 
 const Skills = () => {
   return (
-    <section className="w-full my-10">
-      <Wrapper className="flex-col space-y-11">
+    <section id="skills" className="w-full my-12">
+      <Wrapper className="flex-col pb-10 space-y-11">
         <ThirdTitle text="My skills" className="text-center text-primary" />
         <Carousel
           responsive={responsive}
@@ -30,6 +31,8 @@ const Skills = () => {
           ))}
         </Carousel>
       </Wrapper>
+
+      <HorizontalLine className="left-0 transform rotate-180" />
     </section>
   );
 };
