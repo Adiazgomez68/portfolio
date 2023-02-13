@@ -1,12 +1,12 @@
-import { ThirdTitle } from "../shared/Titles";
-import Wrapper from "../shared/Wrapper";
-import projects from "../../utils/projects.json";
+import { ThirdTitle } from "../../shared/Titles";
+import Wrapper from "../../shared/Wrapper";
+import projects from "../../../utils/projects.json";
 import ProjectCard from "./ProjectCard";
-import HorizontalLine from "../shared/icons/HorizontalLine";
+import HorizontalLine from "../../shared/icons/HorizontalLine";
 
 const Portfolio = () => {
   return (
-    <section className="w-full">
+    <section id="projects" className="w-full">
       <Wrapper className="flex-col mb-6">
         <ThirdTitle text="Portfolio" className="text-center text-primary" />
         {projects.map((project, index) => (

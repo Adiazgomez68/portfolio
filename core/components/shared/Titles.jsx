@@ -11,5 +11,5 @@ export const ThirdTitle = ({ text = "", className = "" }) => {
 };
 
 export const ForthTitle = ({ text = "", className = "" }) => {
-  return <h3 className={`${className} font-bold text-[18px]`}> {text} </h3>;
+  return <h3 className={`${className} font-bold text-[17px]`}> {text} </h3>;
 };

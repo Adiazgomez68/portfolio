@@ -26,7 +26,7 @@ const Skills = () => {
               <div className="w-20 h-20">
                 <img src={skill.item} className="w-full" />
               </div>
-              <ForthTitle className="text-sm text-primaryx" text={skill.name} />
+              <ForthTitle className="text-sm text-primary" text={skill.name} />
             </div>
           ))}
         </Carousel>

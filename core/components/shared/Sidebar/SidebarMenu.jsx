@@ -10,7 +10,7 @@ const SidebarMenu = () => {
 
   return (
     <GlassContainer
-      className={`fixed top-0 z-40 backdrop-blur-lg w-full h-screen sm:hidden duration-300 ${
+      className={`fixed top-0 z-40 backdrop-blur-2xl w-full h-screen sm:hidden duration-300 ${
         isOpen ? "-translate-x-0" : "-translate-x-full"
       }`}
     >
@@ -19,10 +19,10 @@ const SidebarMenu = () => {
           <AppLogo className="w-40" />
           <CloseSidebarButton />
         </div>
-        <ul className="px-5 divide-y">
+        <ul className="px-5">
           {links.map((link, index) => (
             <NavBarLink
-              className="px-1 py-3"
+              className="px-1 py-3 border-b border-primary border-opacity-10"
               onClick={close}
               key={index}
               link={link}

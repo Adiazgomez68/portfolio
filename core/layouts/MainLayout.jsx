@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "../components/shared/footer/Footer";
 import Header from "../components/shared/NavBar/Header";
 import SidebarMenu from "../components/shared/Sidebar/SidebarMenu";
 
@@ -16,7 +17,8 @@ const MainLayout = ({ children }) => {
       <div className="relative flex flex-col w-full h-screen">
         <Header />
         <SidebarMenu />
-        <div className="flex flex-col w-full"> {children} </div>
+        <div className="flex flex-col w-full my-7"> {children} </div>
+        <Footer />
       </div>
     </>
   );

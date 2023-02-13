@@ -1,10 +1,10 @@
-import { IconSelector } from "../shared/icons/Technologies";
+import { IconSelector } from "../../shared/icons/Technologies";
 
 const TechnologiesList = ({ icon }) => {
   return (
     <span
       title={icon.name}
-      className="p-2 bg-gray-200 rounded-full text-primary"
+      className="flex items-center p-2 bg-gray-200 rounded-full text-primary"
     >
       {IconSelector(icon.id)}
     </span>

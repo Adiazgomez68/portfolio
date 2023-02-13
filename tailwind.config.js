@@ -2,17 +2,19 @@
 module.exports = {
   darkMode: "class",
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx}", 
-    "./core/components/**/*.{js,jsx,ts,tsx}", 
-    "./core/layouts/**/*.{js,jsx,ts,tsx}"
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./core/components/**/*.{js,jsx,ts,tsx}",
+    "./core/layouts/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {
       colors: {
-        'primary': '#242424',
+        primary: "#242424",
       },
-  },
+      fontSize: {
+        sm: "15px",
+      },
+    },
   },
   plugins: [],
-}
-
+};
