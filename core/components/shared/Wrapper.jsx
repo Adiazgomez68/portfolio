@@ -1,7 +1,7 @@
 const Wrapper = ({
   children,
   className = "",
-  maxScreen = "max-w-screen-lg",
+  maxScreen = "max-w-screen-md",
 }) => {
   return (
     <div className="flex justify-center w-full h-full">

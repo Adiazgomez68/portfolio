@@ -5,8 +5,8 @@ import HorizontalLine from "../shared/icons/HorizontalLine";
 
 const Intro = () => {
   return (
-    <section id="intro" className="mt-14">
-      <Wrapper className="px-5 pb-5">
+    <section id="intro" className=" mt-14">
+      <Wrapper className="px-5 pb-6">
         <div className="grid grid-cols-1 py-4 space-y-5 md:grid-cols-3">
           <div className={Logo}>
             <img src="" alt="Profile" />
@@ -25,7 +25,7 @@ const Intro = () => {
           </div>
         </div>
       </Wrapper>
-      <HorizontalLine />
+      <HorizontalLine className="md:opacity-50 " />
     </section>
   );
 };

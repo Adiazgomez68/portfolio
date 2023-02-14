@@ -62,12 +62,13 @@ export const CustomLeftArrow = ({ onClick, ...rest }) => {
   );
 };
 
-export function ArrowRight(props, { size = "1em" }) {
+export function ArrowRight(props, { size = "1em", className = "" }) {
   return (
     <svg
       stroke="currentColor"
       fill="currentColor"
       strokeWidth={0}
+      className={className}
       viewBox="0 0 1024 1024"
       height={size}
       width={size}

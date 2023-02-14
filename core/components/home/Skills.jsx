@@ -14,6 +14,8 @@ const Skills = () => {
         <ThirdTitle text="My skills" className="text-center text-primary" />
         <Carousel
           responsive={responsive}
+          autoPlay
+          infinite
           className="w-full"
           customLeftArrow={<CustomLeftArrow />}
           customRightArrow={<CustomRightArrow />}
@@ -32,7 +34,7 @@ const Skills = () => {
         </Carousel>
       </Wrapper>
 
-      <HorizontalLine className="left-0 transform rotate-180" />
+      <HorizontalLine className="left-0 transform rotate-180 md:opacity-50" />
     </section>
   );
 };

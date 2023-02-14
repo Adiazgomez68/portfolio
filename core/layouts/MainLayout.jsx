@@ -17,7 +17,7 @@ const MainLayout = ({ children }) => {
       <div className="relative flex flex-col w-full h-screen">
         <Header />
         <SidebarMenu />
-        <div className="flex flex-col w-full my-7"> {children} </div>
+        <div className="flex flex-col w-full my-5"> {children} </div>
         <Footer />
       </div>
     </>

@@ -2,6 +2,7 @@ import Link from "next/link";
 
 const Button = ({
   isRouter,
+  type,
   title,
   link,
   onClick,
@@ -14,16 +15,21 @@ const Button = ({
     <>
       {isRouter ? (
         <Link href={link} target={target} className={`w-full ${classLink}`}>
-          <button className={className}> {title} </button>
+          <button type={type} className={className}>
+            {title}
+          </button>
         </Link>
       ) : (
-        <button
-          onClick={onClick}
-          className={`flex items-center justify-center ${className}`}
-        >
-          {title}
-          <span className="relative left-2">{children}</span>
-        </button>
+        <div className={classLink}>
+          <button
+            type={type}
+            onClick={onClick}
+            className={`flex items-center justify-center ${className}`}
+          >
+            {title}
+            <span className="relative left-2">{children}</span>
+          </button>
+        </div>
       )}
     </>
   );

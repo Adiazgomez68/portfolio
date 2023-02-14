@@ -5,14 +5,14 @@ import Button from "../../shared/Button";
 
 const ProjectCard = ({ image, title, description, techs, link }) => {
   return (
-    <div className="w-full px-6 my-7">
+    <div className="w-full px-6 my-7 group">
       <Wrapper className="grid flex-col items-center grid-cols-1 space-y-3 md:grid-cols-3">
-        <div className="items-center justify-center w-[100%]">
+        <div className="items-center justify-center w-[100%] group-hover:scale-110 ease-in-out duration-300">
           <img src={image} alt="Projects" />
         </div>
 
         <div className="w-full col-span-2 text-left">
-          <ForthTitle className="pb-1" text={title} />
+          <ForthTitle className="pb-1 lg:text-xl text-primary" text={title} />
           <p className="text-sm font-light"> {description} </p>
           <div className="flex my-3 space-x-2 md:items-center">
             {techs.map((tech, index) => (
@@ -24,7 +24,7 @@ const ProjectCard = ({ image, title, description, techs, link }) => {
               target="_blank"
               title="View Project"
               classLink="flex justify-end"
-              className="hidden md:block p-2 bg-[#1BEB7C] w-38 rounded-md text-white"
+              className="hover:bg-green-500 duration-300 hidden md:block p-2 bg-[#1BEB7C] w-38 rounded-md text-white"
             />
           </div>
           <Button
