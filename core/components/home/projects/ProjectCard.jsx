@@ -6,8 +6,8 @@ import Button from "../../shared/Button";
 const ProjectCard = ({ image, title, description, techs, link }) => {
   return (
     <div className="w-full px-6 my-7 group">
-      <Wrapper className="grid flex-col items-center grid-cols-1 space-y-3 md:grid-cols-3">
-        <div className="items-center justify-center w-[100%] group-hover:scale-110 ease-in-out duration-300">
+      <Wrapper className="grid flex-col items-center grid-cols-1 space-y-3 md:grid-cols-3 md:gap-5">
+        <div className="items-center justify-center w-full md:group-hover:scale-125 ease-in-out duration-300 md:scale-110">
           <img src={image} alt="Projects" />
         </div>
 
@@ -23,8 +23,8 @@ const ProjectCard = ({ image, title, description, techs, link }) => {
               link={link}
               target="_blank"
               title="View Project"
-              classLink="flex justify-end"
-              className="hover:bg-green-500 duration-300 hidden md:block p-2 bg-[#1BEB7C] w-38 rounded-md text-white"
+              classLink="relative flex justify-end items-center w-full "
+              className="hover:bg-green-500 absolute duration-300 hidden md:block p-2 bg-[#1BEB7C] w-38 rounded-md text-white"
             />
           </div>
           <Button

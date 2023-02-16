@@ -2,6 +2,8 @@ import Input from "../../shared/Input";
 import Button from "../../shared/Button";
 import { ArrowRight } from "../../shared/icons/Arrows";
 import { useState } from "react";
+import { sendContactForm } from "../../../utils/fetch";
+import { toast } from "react-toastify";
 
 const Form = () => {
   const [form, setForm] = useState({
@@ -13,12 +15,26 @@ const Form = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    e.preventDefault();
     setForm({ ...form, [name]: value });
   };
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setForm({ ...form, isLoading: true });
+    const response = await sendContactForm(form);
+
+    if (response.status == 200) {
+      toast.success("Message sent successfully");
+    } else {
+      toast.error("Failed to send message");
+    }
+  };
+
   return (
-    <form className="flex justify-center w-full px-5 my-8">
+    <form
+      onSubmit={handleSubmit}
+      className="flex justify-center w-full px-5 my-8"
+    >
       <fieldset className="flex flex-col justify-center w-full max-w-screen-sm space-y-4">
         <div className="space-y-4 md:space-x-3 md:space-y-0 md:items-center md:flex">
           <Input

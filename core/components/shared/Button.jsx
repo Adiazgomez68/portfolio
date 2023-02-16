@@ -6,6 +6,7 @@ const Button = ({
   title,
   link,
   onClick,
+  disabled,
   target,
   className = "",
   children,
@@ -14,7 +15,7 @@ const Button = ({
   return (
     <>
       {isRouter ? (
-        <Link href={link} target={target} className={`w-full ${classLink}`}>
+        <Link href={link} target={target} className={`${classLink}`}>
           <button type={type} className={className}>
             {title}
           </button>
