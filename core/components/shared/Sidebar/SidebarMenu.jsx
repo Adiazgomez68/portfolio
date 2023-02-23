@@ -22,7 +22,7 @@ const SidebarMenu = () => {
         <ul className="px-5">
           {links.map((link, index) => (
             <NavBarLink
-              className="px-1 py-3 border-b border-primary border-opacity-10"
+              className="px-1 py-3 border-b border-primary dark:border-secondary dark:border-opacity-10 border-opacity-10"
               onClick={close}
               key={index}
               link={link}

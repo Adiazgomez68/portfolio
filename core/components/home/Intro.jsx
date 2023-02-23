@@ -1,6 +1,6 @@
 import { MainTitle } from "../shared/Titles";
 import Wrapper from "../shared/Wrapper";
-import Logo from "../../../public/images/Logo.svg";
+import Logo from "../../../public/images/Light_Logo.svg";
 import HorizontalLine from "../shared/icons/HorizontalLine";
 
 const Intro = () => {
@@ -12,8 +12,11 @@ const Intro = () => {
             <img src="" alt="Profile" />
           </div>
           <div className="flex flex-col items-center col-span-2 space-y-1 md:items-start text-primary">
-            <MainTitle text="Andrés Díaz" className="text-primary" />
-            <p className="text-sm font-light text-center md:text-left">
+            <MainTitle
+              text="Andrés Díaz"
+              className="text-primary dark:text-secondary"
+            />
+            <p className="text-sm font-light text-center text-gray-900 md:text-left dark:text-secondary">
               I am a FrontEnd Developer located in Colombia, with experience in
               the design, creation of user interfaces and DevOps. Since 2019 I
               have been making small and medium web applications, layouts,

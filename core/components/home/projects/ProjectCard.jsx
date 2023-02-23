@@ -6,13 +6,16 @@ import Button from "../../shared/Button";
 const ProjectCard = ({ image, title, description, techs, link }) => {
   return (
     <div className="w-full px-6 my-7 group">
-      <Wrapper className="grid flex-col items-center grid-cols-1 space-y-3 md:grid-cols-3 md:gap-5">
-        <div className="items-center justify-center w-full md:group-hover:scale-125 ease-in-out duration-300 md:scale-110">
+      <Wrapper className="flex-col items-center grid-cols-1 space-y-3 md:grid md:grid-cols-3 md:gap-5">
+        <div className="items-center w-full duration-300 ease-in-out sm:w-1/2 md:w-full md:group-hover:scale-125 md:scale-110">
           <img src={image} alt="Projects" />
         </div>
 
-        <div className="w-full col-span-2 text-left">
-          <ForthTitle className="pb-1 lg:text-xl text-primary" text={title} />
+        <div className="w-full col-span-2 text-left md:px-0 sm:px-16">
+          <ForthTitle
+            className="pb-1 lg:text-xl text-primary dark:text-secondary"
+            text={title}
+          />
           <p className="text-sm font-light"> {description} </p>
           <div className="flex my-3 space-x-2 md:items-center">
             {techs.map((tech, index) => (

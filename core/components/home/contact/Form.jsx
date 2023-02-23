@@ -4,8 +4,10 @@ import { ArrowRight } from "../../shared/icons/Arrows";
 import { useState } from "react";
 import { sendContactForm } from "../../../utils/fetch";
 import { toast } from "react-toastify";
+import Spinner from "../../shared/Spinner";
 
 const Form = () => {
+  const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({
     name: "",
     mail: "",
@@ -21,11 +23,14 @@ const Form = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setForm({ ...form, isLoading: true });
+    setLoading(true);
     const response = await sendContactForm(form);
 
     if (response.status == 200) {
+      setLoading(false);
       toast.success("Message sent successfully");
     } else {
+      setLoading(false);
       toast.error("Failed to send message");
     }
   };
@@ -60,7 +65,7 @@ const Form = () => {
           onChange={handleChange}
         />
         <textarea
-          className="border bg-[#F9F9F9] border-[#BBBBBB] rounded-md p-3 placeholder:text-primary focus:outline-0"
+          className="border bg-[#F9F9F9] border-[#BBBBBB] rounded-md p-3 placeholder:text-primary focus:outline-0 dark:bg-[#0C223A] dark:placeholder:text-secondary"
           placeholder="Message"
           onChange={handleChange}
           value={form.message}
@@ -72,12 +77,14 @@ const Form = () => {
         ></textarea>
 
         <Button
-          className="hover:bg-green-500 group duration-300 md:w-52 md:right-0 p-2 bg-[#1BEB7C] w-full rounded-md text-white relative"
-          title="Send message"
+          className="hover:bg-green-500 group duration-300 sm:w-52 md:right-0 p-2 bg-[#1BEB7C] w-full rounded-md text-white relative"
+          title={loading ? <Spinner /> : "Send message"}
           type="submit"
           classLink="w-full flex justify-end"
         >
-          <ArrowRight className="duration-300 group-hover:translate-x-3" />
+          {!loading && (
+            <ArrowRight className="duration-300 group-hover:translate-x-3" />
+          )}
         </Button>
       </fieldset>
     </form>

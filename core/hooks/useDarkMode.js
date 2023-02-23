@@ -1,5 +1,3 @@
-const useDarkMode = () => {
-    
-}
+const useDarkMode = () => {};
 
 export default useDarkMode;

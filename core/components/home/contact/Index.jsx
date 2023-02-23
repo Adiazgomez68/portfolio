@@ -7,7 +7,10 @@ const Contact = () => {
   return (
     <section id="contact" className="w-full my-12 lg:my-16">
       <Wrapper className="flex-col pb-4">
-        <ThirdTitle text="Contact me" className="text-center text-primary" />
+        <ThirdTitle
+          text="Contact me"
+          className="text-center text-primary dark:text-secondary"
+        />
         <Form />
       </Wrapper>
 

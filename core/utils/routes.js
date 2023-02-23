@@ -15,4 +15,8 @@ export const links = [
     name: "Contact",
     url: "/#contact",
   },
+  {
+    name: "DarkMode",
+    url: "",
+  },
 ];

@@ -6,7 +6,7 @@ const SidebarButton = () => {
 
   return (
     <button onClick={open} className="duration-200 active:scale-75">
-      <MenuIcon className="text-primary" />
+      <MenuIcon className="text-primary dark:text-secondary" />
     </button>
   );
 };

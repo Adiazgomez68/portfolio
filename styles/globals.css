@@ -17,6 +17,7 @@ body {
   overflow: scroll;
   scroll-behavior: smooth;
   scroll-padding-top: 90px;
+  @apply dark:bg-[#001933]
 }
 
 ::-webkit-scrollbar {

@@ -8,7 +8,10 @@ const Portfolio = () => {
   return (
     <section id="projects" className="w-full">
       <Wrapper className="flex-col mb-6 lg:my-6">
-        <ThirdTitle text="Portfolio" className="text-center text-primary" />
+        <ThirdTitle
+          text="Portfolio"
+          className="text-center text-primary dark:text-secondary"
+        />
         {projects.map((project, index) => (
           <ProjectCard
             key={index}

@@ -4,7 +4,7 @@ import Wrapper from "../Wrapper";
 const Footer = () => {
   return (
     <section id="footer" className="w-full">
-      <Wrapper className="flex-col pb-10 space-y-5 text-primary">
+      <Wrapper className="flex-col pb-10 space-y-5 text-primary dark:text-secondary">
         <div className="flex justify-center w-full space-x-3 ">
           <Github />
           <Linkedin />
