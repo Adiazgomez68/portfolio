@@ -2,42 +2,40 @@ import Input from "../../shared/Input";
 import Button from "../../shared/Button";
 import { ArrowRight } from "../../shared/icons/Arrows";
 import { useState } from "react";
+import { useForm } from "react-hook-form";
 import { sendContactForm } from "../../../utils/fetch";
 import { toast } from "react-toastify";
 import Spinner from "../../shared/Spinner";
 
 const Form = () => {
   const [loading, setLoading] = useState(false);
-  const [form, setForm] = useState({
-    name: "",
-    mail: "",
-    subject: "",
-    message: "",
+  const { register, reset, handleSubmit } = useForm({
+    defaultValues: {
+      name: "",
+      mail: "",
+      subject: "",
+      message: "",
+    },
   });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setForm({ ...form, [name]: value });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setForm({ ...form, isLoading: true });
+  const onSubmit = async (data) => {
     setLoading(true);
-    const response = await sendContactForm(form);
+    const response = await sendContactForm(data);
 
     if (response.status == 200) {
       setLoading(false);
+      reset();
       toast.success("Message sent successfully");
     } else {
       setLoading(false);
+      reset();
       toast.error("Failed to send message");
     }
   };
 
   return (
     <form
-      onSubmit={handleSubmit}
+      onSubmit={handleSubmit(onSubmit)}
       className="flex justify-center w-full px-5 my-8"
     >
       <fieldset className="flex flex-col justify-center w-full max-w-screen-sm space-y-4">
@@ -46,29 +44,25 @@ const Form = () => {
             type="text"
             name="name"
             placeholder="Name"
-            value={form.name}
-            onChange={handleChange}
+            {...register("name")}
           />
           <Input
             type="email"
             name="mail"
             placeholder="Mail"
-            value={form.mail}
-            onChange={handleChange}
+            {...register("mail")}
           />
         </div>
         <Input
           type="text"
           name="subject"
           placeholder="Subject"
-          value={form.subject}
-          onChange={handleChange}
+          {...register("subject")}
         />
         <textarea
           className="border bg-[#F9F9F9] border-[#BBBBBB] rounded-md p-3 placeholder:text-primary focus:outline-0 dark:bg-[#0C223A] dark:placeholder:text-secondary"
           placeholder="Message"
-          onChange={handleChange}
-          value={form.message}
+          {...register("message")}
           type="text"
           name="message"
           required
