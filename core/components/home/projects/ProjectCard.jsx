@@ -35,7 +35,7 @@ const ProjectCard = ({ image, title, description, techs, link }) => {
             link={link}
             target="_blank"
             title="View Project"
-            className="md:hidden p-2 mt-2 bg-[#1BEB7C] w-full rounded-md text-white"
+            className="md:hidden p-2 mt-2 bg-[#1BEB7C] w-full sm:w-1/2 rounded-md text-white"
           />
         </div>
       </Wrapper>
