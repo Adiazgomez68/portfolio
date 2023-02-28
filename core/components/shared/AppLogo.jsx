@@ -1,5 +1,5 @@
-import LightLogo from "../../../public/images/Light_Logo.png";
-import DarkLogo from "../../../public/images/Dark_Logo.png";
+import LightLogo from "../../../public/images/Light_Logo.svg";
+import DarkLogo from "../../../public/images/Dark_Logo.svg";
 import Image from "next/image";
 import { useTheme } from "next-themes";
 
