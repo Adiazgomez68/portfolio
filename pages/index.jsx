@@ -1,7 +1,16 @@
-import { Inter } from "@next/font/google";
-import styles from "@/styles/Home.module.css";
-import MainLayout from "@/core/layouts/MainLayout";
+import Intro from "../core/components/home/Intro";
+import Skills from "../core/components/home/Skills";
+import Portfolio from "../core/components/home/projects/Index";
+import Contact from "../core/components/home/contact/Index";
+import MainLayout from "../core/layouts/MainLayout";
 
 export default function Home() {
-  return <MainLayout></MainLayout>;
+  return (
+    <MainLayout>
+      <Intro />
+      <Skills />
+      <Portfolio />
+      <Contact />
+    </MainLayout>
+  );
 }

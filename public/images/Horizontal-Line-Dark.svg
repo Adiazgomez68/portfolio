@@ -1,0 +1,35 @@
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 934.5 26">
+  <defs>
+    <style>
+      .cls-1,
+      .cls-4 {
+        opacity: 0.28;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #2e2f3e;
+      }
+
+      .cls-2,
+      .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        fill: #dfdfdf;
+      }
+
+      .cls-4 {
+        fill: #f2f2f2;
+        stroke: #dfdfdf;
+      }
+    </style>
+  </defs>
+  <title>Horizontal-Line-Dark</title>
+  <g class="cls-1">
+    <line class="cls-2" x1="934.5" y1="12.5" x2="25.5" y2="12.5" />
+    <line class="cls-3" x1="934.5" y1="12.5" x2="25.5" y2="12.5" />
+  </g>
+  <circle class="cls-4" cx="13" cy="13" r="12.5" />
+</svg>
