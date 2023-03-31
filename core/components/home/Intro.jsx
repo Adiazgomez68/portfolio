@@ -17,12 +17,12 @@ const Intro = () => {
             />
             <p className="text-sm font-light text-center text-gray-900 md:text-left dark:text-secondary">
               I am a FrontEnd Developer located in Colombia, with experience in
-              the web design, creation of user interfaces and DevOps. Since 2019
-              I have been making small and medium web applications, layouts,
-              single page and responsive applications. Using technologies such
-              as HTML, CSS, Javascript, ReactJs, VueJs, Bootstrap, Material
-              Design and Tailwind css, working on projects for commercial and
-              some personal clients.
+              the web design and creation of user interfaces. Since 2019 I have
+              been making small and medium web applications, layouts, single
+              page and responsive applications. Using technologies such as HTML,
+              CSS, Javascript, ReactJs, VueJs, Bootstrap, Material Design and
+              Tailwind css, working on projects for commercial and some personal
+              clients.
             </p>
           </div>
         </div>
