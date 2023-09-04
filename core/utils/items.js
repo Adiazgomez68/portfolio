@@ -30,5 +30,9 @@ export const skills = [
     {
         item: "/images/skills/Bootstrap.png",
         name: "BOOTSTRAP"
-    }
+    },
+    {
+        item: "/images/skills/Laravel.png",
+        name: "LARAVEL"
+    },
 ]
