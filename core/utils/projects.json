@@ -64,5 +64,25 @@
             }
         ],
         "link" : "https://icards.com.co/"
+    },
+    {
+        "image" : "/images/projects/Landing.webp",
+        "title" : "Swimming Pool Landing",
+        "description" : "A landing page to publish swimming pool services.",
+        "technologies" : [
+            {
+                "id": "react.js",
+                "name" : "React.js"
+            },
+            {
+                "id": "next.js",
+                "name" : "Next.js"
+            },
+            {
+                "id": "tailwindcss",
+                "name" : "Tailwind CSS"
+            }
+        ],
+        "link" : "https://test-landing-mu.vercel.app/"
     }
 ]
