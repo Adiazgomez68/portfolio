@@ -30,12 +30,12 @@
         "description" : "A platform for entrepreneurs where they will find courses and worshops to learn marketing, design and entrepreneurship.",
         "technologies" : [
             {
-                "id": "react.js",
-                "name" : "React.js"
-            },
-            {
                 "id": "next.js",
                 "name" : "Next.js"
+            },
+            {
+                "id": "react.js",
+                "name" : "React.js"
             },
             {
                 "id": "tailwindcss",
@@ -46,37 +46,17 @@
     },
 
     {
-        "image" : "/images/projects/Icards.webp",
-        "title" : "Icards",
-        "description" : "A website to purchase subscriptions of digital cards that help support to learning english.",
-        "technologies" : [
-            {
-                "id": "react.js",
-                "name" : "React.js"
-            },
-            {
-                "id": "next.js",
-                "name" : "Next.js"
-            },
-            {
-                "id": "tailwindcss",
-                "name" : "Tailwind CSS"
-            }
-        ],
-        "link" : "https://icards.com.co/"
-    },
-    {
         "image" : "/images/projects/Landing.webp",
         "title" : "Swimming Pool Landing",
         "description" : "A landing page to publish swimming pool services.",
         "technologies" : [
             {
-                "id": "react.js",
-                "name" : "React.js"
-            },
-            {
                 "id": "next.js",
                 "name" : "Next.js"
+            },
+            {
+                "id": "react.js",
+                "name" : "React.js"
             },
             {
                 "id": "tailwindcss",

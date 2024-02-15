@@ -9,7 +9,7 @@ const Contact = () => {
       <Wrapper className="flex-col pb-4">
         <ThirdTitle
           text="Contact me"
-          className="text-center text-primary dark:text-secondary"
+          className="tracking-wide text-center text-primary dark:text-secondary"
         />
         <Form />
       </Wrapper>

@@ -1,6 +1,6 @@
 import { IconSelector } from "../../shared/icons/Technologies";
 
-const TechnologiesList = ({ icon }) => {
+const TechnologiesList = ({ icon, color }) => {
   return (
     <span
       title={icon.name}

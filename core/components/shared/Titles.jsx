@@ -13,3 +13,7 @@ export const ThirdTitle = ({ text = "", className = "" }) => {
 export const ForthTitle = ({ text = "", className = "" }) => {
   return <h3 className={`${className} font-semibold text-[17px]`}> {text} </h3>;
 };
+
+export const FifthTitle = ({ text = "", className = "" }) => {
+  return <h3 className={`${className} font-semibold text-[15px]`}> {text} </h3>;
+};

@@ -2,7 +2,7 @@ export const Html5 = (props, { size = "1.3em" }) => {
   return (
     <svg
       stroke="currentColor"
-      fill="currentColor"
+      fill="#F3610C"
       strokeWidth={0}
       role="img"
       viewBox="0 0 24 24"
@@ -20,7 +20,7 @@ export const Css3 = (props, { size = "1.3em" }) => {
   return (
     <svg
       stroke="currentColor"
-      fill="currentColor"
+      fill="#0C88F3"
       strokeWidth={0}
       role="img"
       viewBox="0 0 24 24"
@@ -38,7 +38,7 @@ export const Javascript = (props, { size = "1.3em" }) => {
   return (
     <svg
       stroke="currentColor"
-      fill="currentColor"
+      fill="#C9C905"
       strokeWidth={0}
       role="img"
       viewBox="0 0 24 24"
@@ -56,7 +56,7 @@ export const ReactJs = (props, { size = "1.3em" }) => {
   return (
     <svg
       stroke="currentColor"
-      fill="currentColor"
+      fill="#22D6DA"
       strokeWidth={0}
       role="img"
       viewBox="0 0 24 24"
@@ -92,7 +92,7 @@ export const Bootstrap = (props, { size = "1.3em" }) => {
   return (
     <svg
       stroke="currentColor"
-      fill="currentColor"
+      fill="#611DC1"
       strokeWidth={0}
       role="img"
       viewBox="0 0 24 24"
@@ -110,7 +110,7 @@ export const Tailwindcss = (props, { size = "1.3em" }) => {
   return (
     <svg
       stroke="currentColor"
-      fill="currentColor"
+      fill="#15B1C4"
       strokeWidth={0}
       role="img"
       viewBox="0 0 24 24"

@@ -10,7 +10,7 @@ const Portfolio = () => {
       <Wrapper className="flex-col mb-6 lg:my-6">
         <ThirdTitle
           text="Portfolio"
-          className="text-center text-primary dark:text-secondary"
+          className="tracking-wide text-center text-primary dark:text-secondary"
         />
         {projects.map((project, index) => (
           <ProjectCard
