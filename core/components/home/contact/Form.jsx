@@ -60,7 +60,7 @@ const Form = () => {
           {...register("subject")}
         />
         <textarea
-          className="border bg-[#F9F9F9] border-[#BBBBBB] rounded-md p-3 placeholder:text-primary focus:outline-0 dark:bg-[#0C223A] dark:placeholder:text-secondary"
+          className="border bg-[#F9F9F9] border-[#BBBBBB] rounded-md p-3 placeholder:text-primary focus:outline-0 dark:bg-[#12181d] dark:placeholder:text-secondary"
           placeholder="Message"
           {...register("message")}
           type="text"
@@ -71,7 +71,7 @@ const Form = () => {
         ></textarea>
 
         <Button
-          className="hover:bg-green-500 group duration-300 sm:w-52 md:right-0 p-2 bg-[#1BEB7C] w-full rounded-md text-white relative"
+          className="relative w-full p-2 text-white duration-300 bg-green-600 rounded-md hover:bg-green-500 group sm:w-52 md:right-0"
           title={loading ? <Spinner /> : "Send message"}
           type="submit"
           classLink="w-full flex justify-end"

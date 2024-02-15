@@ -13,12 +13,14 @@
 html,
 body {
   font-family: "Poppins", sans-serif;
-  background: #f7f6f6 ;
+  background: #f7f6f6;
   overflow: scroll;
   scroll-behavior: smooth;
   scroll-padding-top: 90px;
-  @apply dark:bg-[#001933]
+  @apply dark:bg-[#12181d];
 }
+
+/* @apply dark:bg-[#001933] */
 
 ::-webkit-scrollbar {
   display: none;
