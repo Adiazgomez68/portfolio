@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <MainLayout>
       <Intro />
-      <Skills />
+      {/* <Skills /> */}
       <Portfolio />
       <Contact />
     </MainLayout>

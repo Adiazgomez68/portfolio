@@ -1,19 +1,15 @@
 export const links = [
   {
-    name: "Home",
+    name: "Proyectos",
     url: "/#intro",
   },
   {
-    name: "Skills",
+    name: "Experiencia",
     url: "/#skills",
   },
   {
-    name: "Portfolio",
+    name: "Contacto",
     url: "/#projects",
-  },
-  {
-    name: "Contact",
-    url: "/#contact",
   },
   {
     name: "DarkMode",

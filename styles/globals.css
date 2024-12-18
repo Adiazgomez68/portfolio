@@ -2,7 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@layer base {
+  :root {
+    --primary: 0 0% 78%;
+    --secondary: 201.529 73% 55%;
+    --tertiary: 201 48% 17%;
+
+    --font-inconsolada: "Inconsolata", monospace;
+  }
+}
 
 * {
   box-sizing: border-box;
@@ -12,7 +20,6 @@
 
 html,
 body {
-  font-family: "Poppins", sans-serif;
   background: #f7f6f6;
   overflow: scroll;
   scroll-behavior: smooth;
@@ -24,4 +31,8 @@ body {
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+.font-inconsolada {
+  font-family: var(--font-inconsolada);
 }

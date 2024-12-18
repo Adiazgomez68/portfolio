@@ -9,13 +9,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#242424",
-        secondary: "#DFDFDF",
-        third: "#217DD6"
+        primary: "hsl(var(--primary))",
+        secondary: "hsl(var(--secondary))",
+        tertiary: "hsl(var(--tertiary))"
       },
       fontSize: {
         sm: "15px",
-      },
+      }
     },
   },
   plugins: [],

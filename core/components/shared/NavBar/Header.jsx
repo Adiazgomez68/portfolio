@@ -9,7 +9,7 @@ const Header = ({ className }) => {
   return (
     <GlassContainer className="fixed top-0 z-30">
       <header
-        className={`flex items-center w-full sm:py-0 py-2 bg-light ${className}`}
+        className={`flex items-center w-full sm:py-1 py-2 bg-light ${className}`}
       >
         <Wrapper>
           <AppLogo className="pl-5 w-52 sm:w-48" />

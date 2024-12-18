@@ -4,28 +4,30 @@ import projects from "../../../utils/projects.json";
 import ProjectCard from "./ProjectCard";
 import HorizontalLine from "../../shared/icons/HorizontalLine";
 
-const Portfolio = () => {
+const Projects = () => {
   return (
     <section id="projects" className="w-full">
-      <Wrapper className="flex-col mb-6 lg:my-6">
-        <ThirdTitle
-          text="Portfolio"
-          className="tracking-wide text-center text-primary dark:text-secondary"
-        />
-        {projects.map((project, index) => (
-          <ProjectCard
-            key={index}
-            image={project.image}
-            title={project.title}
-            description={project.description}
-            techs={project.technologies}
-            link={project.link}
-          />
-        ))}
+      <Wrapper className="flex-col mb-6 px-5 lg:my-6 items-start justify-start">
+        <div className="flex flex-col text-primary dark:text-primary">
+          <h1 className="tracking-wide text-2xl">Proyectos</h1>
+          <span className="font-light">Algunas cosas que he construido</span>
+        </div>
+        <div className="grid grid-cols-3 gap-4">
+          {projects.map((project, index) => (
+            <ProjectCard
+              key={index}
+              image={project.image}
+              title={project.title}
+              description={project.description}
+              techs={project.technologies}
+              link={project.link}
+            />
+          ))}
+        </div>
       </Wrapper>
       <HorizontalLine className="md:opacity-50" />
     </section>
   );
 };
 
-export default Portfolio;
+export default Projects;

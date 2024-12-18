@@ -9,11 +9,12 @@ const AppLogo = ({ className = "" }) => {
   return (
     <picture className={`flex items-center ${className}`}>
       <Image
-        src={theme === "light" ? LightLogo : DarkLogo}
+        // src={theme === "light" ? LightLogo : DarkLogo}
+        src='/images/Logo.png'
         alt="Logo portfolio"
         width={100}
         height={100}
-        className="w-full"
+        className="w-[3rem]"
       />
     </picture>
   );

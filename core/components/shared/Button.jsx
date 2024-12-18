@@ -25,7 +25,9 @@ const Button = ({
           <button
             type={type}
             onClick={onClick}
-            className={`flex items-center justify-center ${className}`}
+            className={`flex items-center justify-center border rounded-md font-normal
+              border-secondary text-secondary bg-transparent py-3 px-5 hover:bg-secondary/10
+              duration-200 font-inconsolada ${className}`}
           >
             {title}
             <span className="relative left-2">{children}</span>

@@ -1,5 +1,5 @@
 export const MainTitle = ({ text = "", className = "" }) => {
-  return <h1 className={`${className} font-semibold text-4xl `}>{text}</h1>;
+  return <h1 className={`${className} font-semibold text-6xl `}>{text}</h1>;
 };
 
 export const SubTitle = ({ text = "", className = "" }) => {
