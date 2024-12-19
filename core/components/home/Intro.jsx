@@ -31,7 +31,7 @@ const Intro = () => {
               className="w-10 animate-[bounce_1.2s_ease-in-out_infinite]"
             />
           </div>
-          <Button title="Descargar CV" />
+          <Button>Descargar CV</Button>
         </div>
       </Wrapper>
     </section>

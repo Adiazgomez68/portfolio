@@ -1,8 +1,8 @@
 [
     {
-        "image" : "/images/projects/Maps.webp",
+        "id": 1,
         "title" : "Interactive Maps",
-        "description" : "10 Interactive maps for Environment Ministry of Colombia.",
+        "description" : "10 mapas interactivos donde se ilustran diferentes ubicaciones y diversidades de Colombia para el Ministerio de Ambiente Colombiano.",
         "technologies" : [
             {
                 "id": "html5",
@@ -25,9 +25,76 @@
     },
 
     {
-        "image" : "/images/projects/Edu.webp",
+        "id": 2,
+        "title" : "Hi Beauty Es",
+        "description" : "Una aplicación web para ventas de suscripción de la cajita de belleza más vendida de Colombia, ahora en España.",
+        "technologies" : [
+            {
+                "id": "next.js",
+                "name" : "Next.js"
+            },
+            {
+                "id": "react.js",
+                "name" : "React.js"
+            },
+            {
+                "id": "tailwindcss",
+                "name" : "Tailwind CSS"
+            }
+        ],
+        "link" : "https://hibeautybox.es/"
+    },
+
+    {
+        "id": 3,
+        "title" : "Sistema de gestión de planes institucionales",
+        "description" : "Sitema de gestión integrada de planes institucionales para la Universidad de Córdoba.",
+        "technologies" : [
+            {
+                "id": "html5",
+                "name" : "Html5"
+            },
+            {
+                "id": "laravel",
+                "name" : "Laravel"
+            },
+            {
+                "id": "php",
+                "name" : "PHP"
+            },
+            {
+                "id": "tailwindcss",
+                "name" : "Tailwind CSS"
+            }
+        ],
+        "link" : "https://planesinstitucionales.appsprod.unicordoba.edu.co/"
+    },
+
+    {
+        "id": 4,
+        "title" : "Dashboard Rituall",
+        "description" : "Sistema administrador para Rituall, una caja de skincare y bienestar vendida en Colombia por suscripción en línea.",
+        "technologies" : [
+            {
+                "id": "next.js",
+                "name" : "Next.js"
+            },
+            {
+                "id": "react.js",
+                "name" : "React.js"
+            },
+            {
+                "id": "tailwindcss",
+                "name" : "Tailwind CSS"
+            }
+        ],
+        "link" : "https://dashboard.rituall.com.co/"
+    },
+
+    {
+        "id": 5,
         "title" : "StartupsLab | EDU",
-        "description" : "A platform for entrepreneurs where they will find courses and worshops to learn marketing, design and entrepreneurship.",
+        "description" : "Una plataforma para emprendedores donde encontrarán cursos y talleres para aprender marketing, diseño y emprendimiento.",
         "technologies" : [
             {
                 "id": "next.js",
@@ -46,9 +113,9 @@
     },
 
     {
-        "image" : "/images/projects/Landing.webp",
-        "title" : "Swimming Pool Landing",
-        "description" : "A landing page to publish swimming pool services.",
+        "id": 6,
+        "title" : "Pool landing",
+        "description" : "Una landing page para ofrecer servicios de piscinas.",
         "technologies" : [
             {
                 "id": "next.js",

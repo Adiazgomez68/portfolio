@@ -3,10 +3,9 @@ import Link from "next/link";
 const Button = ({
   isRouter,
   type,
-  title,
   link,
   onClick,
-  disabled,
+  disabled = false,
   target,
   className = "",
   children,
@@ -17,7 +16,7 @@ const Button = ({
       {isRouter ? (
         <Link href={link} target={target} className={`${classLink}`}>
           <button type={type} className={className}>
-            {title}
+            {children}
           </button>
         </Link>
       ) : (
@@ -25,12 +24,12 @@ const Button = ({
           <button
             type={type}
             onClick={onClick}
+            disabled={disabled}
             className={`flex items-center justify-center border rounded-md font-normal
               border-secondary text-secondary bg-transparent py-3 px-5 hover:bg-secondary/10
               duration-200 font-inconsolada ${className}`}
           >
-            {title}
-            <span className="relative left-2">{children}</span>
+            {children}
           </button>
         </div>
       )}
