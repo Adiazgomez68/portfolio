@@ -3,17 +3,11 @@ import Wrapper from "../Wrapper";
 
 const Footer = () => {
   return (
-    <section id="footer" className="w-full">
-      <Wrapper className="flex-col pb-10 space-y-5 text-primary dark:text-secondary">
-        <div className="flex justify-center w-full space-x-3 ">
-          <Github />
-          <Linkedin />
-        </div>
-        <div className="w-full text-center">
-          <p>
-            Created by <b>Andrés Díaz</b>
-          </p>
-        </div>
+    <section id="footer" className="w-full h-full">
+      <Wrapper className="flex-col pt-10 pb-10 space-y-5 text-primary dark:text-secondary">
+        <p className="w-full text-center font-inconsolada text-primary text-sm">
+          Diseñado y construido por Andrés Díaz
+        </p>
       </Wrapper>
     </section>
   );

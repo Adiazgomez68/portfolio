@@ -1,13 +1,12 @@
 import Image from "next/image";
 import Wrapper from "../shared/Wrapper";
-import HorizontalLine from "../shared/icons/HorizontalLine";
 import Button from "../shared/Button";
 
 const Intro = () => {
   return (
     <section id="intro" className="pt-36">
-      <Wrapper className="px-5 pb-6">
-        <div className="grid grid-cols-1 py-4 space-y-5 md:gap-4 md:grid-cols-4">
+      <Wrapper className="px-5 pb-8">
+        <div className="grid grid-cols-1 space-y-5 md:gap-4 md:grid-cols-4">
           <div className="flex flex-col items-center col-span-3 space-y-1 md:items-start text-primary">
             <h1 className="font-medium text-[4.2rem] leading-none">
               Andrés Díaz

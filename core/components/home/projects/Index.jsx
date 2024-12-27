@@ -1,12 +1,12 @@
 import Wrapper from "../../shared/Wrapper";
-import projects from "../../../utils/projects.json";
 import ProjectCard from "./ProjectCard";
 import HorizontalLine from "../../shared/icons/HorizontalLine";
+import { projects } from "../../../utils/data";
 
 const Projects = () => {
   return (
     <section id="projects" className="w-full">
-      <Wrapper className="flex-col mb-6 px-5 lg:my-6 items-start justify-start">
+      <Wrapper className="flex-col mb-6 px-5 lg:my-8 items-start justify-start">
         <div className="flex flex-col space-y-2 text-primary dark:text-primary">
           <h1 className="tracking-wide text-2xl">Proyectos</h1>
           <span className="font-light">Algunas cosas que he construido</span>
@@ -23,7 +23,6 @@ const Projects = () => {
           ))}
         </div>
       </Wrapper>
-      <HorizontalLine className="md:opacity-50" />
     </section>
   );
 };

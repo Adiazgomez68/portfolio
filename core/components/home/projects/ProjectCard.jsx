@@ -17,13 +17,14 @@ const ProjectCard = ({ title, description, techs, link }) => {
                 link={link}
                 target="_blank"
                 classLink="border-none"
+                className="w-auto"
               >
-                <ExternalLink className="text-primary h-5 w-5" />
+                <ExternalLink className="text-primary h-5 w-5 hover:text-secondary duration-200" />
               </Button>
             </div>
 
             <div className="space-y-3">
-              <h1 className="pb-1 tracking-wide font-semibold group-hover:text-secondary duration-200 lg:text-xl text-primary dark:text-primary">
+              <h1 className="pb-1 tracking-wide hover:cursor-default font-semibold duration-200 lg:text-xl text-primary dark:text-primary">
                 {title}
               </h1>
               <p className="text-sm font-light tracking-wide text-primary">

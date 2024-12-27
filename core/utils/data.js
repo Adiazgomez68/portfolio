@@ -1,4 +1,4 @@
-[
+export const projects = [
     {
         "id": 1,
         "title" : "Interactive Maps",
@@ -23,7 +23,6 @@
         ],
         "link" : "https://github.com/Adiazgomez68/interactive-maps"
     },
-
     {
         "id": 2,
         "title" : "Hi Beauty Es",
@@ -44,7 +43,6 @@
         ],
         "link" : "https://hibeautybox.es/"
     },
-
     {
         "id": 3,
         "title" : "Sistema de gestión de planes institucionales",
@@ -69,7 +67,6 @@
         ],
         "link" : "https://planesinstitucionales.appsprod.unicordoba.edu.co/"
     },
-
     {
         "id": 4,
         "title" : "Dashboard Rituall",
@@ -90,7 +87,6 @@
         ],
         "link" : "https://dashboard.rituall.com.co/"
     },
-
     {
         "id": 5,
         "title" : "StartupsLab | EDU",
@@ -111,7 +107,6 @@
         ],
         "link" : "https://stirring-starburst-f86dd8.netlify.app"
     },
-
     {
         "id": 6,
         "title" : "Pool landing",
@@ -131,5 +126,59 @@
             }
         ],
         "link" : "https://test-landing-mu.vercel.app/"
+    }
+];
+
+export const experiences = [
+    {
+        company: 'Subscripcionboxco SAS',
+        functions: [
+            {
+                item: 'Incorporación de nuevas características y funcionalidades en el sistema administrativo.'
+            },
+            {
+                item: 'Creación de filtros de búsqueda para tienda online, y soporte en web de ventas de suscripciones.'
+            },
+            {
+                item: 'Integración de métodos de pago.'
+            },
+            {
+                item: 'Desarrollo de la web Hi Beauty Es para ventas de suscripción de cajas de belleza en España.'
+            }
+        ],
+        date: 'Dic 2023',
+        job: 'Desarrollador Frontend',
+        currentJob: true
+    },
+    {
+        company: 'Parquesoft Sucre',
+        functions: [
+            {
+                item: 'Construcción de sistema administrativo para la gestión de planes institucionales de la Universidad de Córdoba.'
+            },
+            {
+                item: 'Configuración de inicio de sesión con Google OAuth2 para acceso a usuarios con correos electrónicos institucionales.'
+            }
+        ],
+        date: 'Mar 2023 - Nov 2024',
+        job: 'Desarrollador Web',
+        currentJob: false
+    },
+    {
+        company: 'Startups Lab Agencia',
+        functions: [
+            {
+                item: 'Maquetación de plataforma de educación en línea para emprendedores.'
+            },
+            {
+                item: 'Creación de planes para ventas de subscripciones en línea de tarjetas didácticas.'
+            },
+            {
+                item: 'Manejo de servidores aws para despliegues a producción de sitios web.'
+            }
+        ],
+        date: '2022 - 2023',
+        job: 'Desarrollador Frontend',
+        currentJob: false
     }
 ]
