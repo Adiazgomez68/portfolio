@@ -5,6 +5,7 @@ const Button = ({
   type,
   link,
   onClick,
+  download = false,
   disabled = false,
   target,
   className = "",

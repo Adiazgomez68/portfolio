@@ -69,8 +69,8 @@ export const projects = [
     },
     {
         "id": 4,
-        "title" : "Dashboard Rituall",
-        "description" : "Sistema administrador para Rituall, una caja de skincare y bienestar vendida en Colombia por suscripción en línea.",
+        "title" : "Dashboard Hi Beauty ES",
+        "description" : "Sistema administrativo para Hi Beauty de España, desarrollado para la gestión de los usuarios suscritos a Hi Beauty.",
         "technologies" : [
             {
                 "id": "next.js",
@@ -85,7 +85,7 @@ export const projects = [
                 "name" : "Tailwind CSS"
             }
         ],
-        "link" : "https://dashboard.rituall.com.co/"
+        "link" : "https://dashboard.hibeautybox.es/"
     },
     {
         "id": 5,

@@ -15,7 +15,16 @@ module.exports = {
       },
       fontSize: {
         sm: "15px",
-      }
+      },
+      keyframes: {
+        fadeUp: {
+          '0%': { opacity: 0, transform: 'translateY(300px)' },
+          '100%': { opacity: 1, transform: 'translateY(0)' },
+        },
+      },
+      animation: {
+        'fade-up': 'fadeUp 0.7s ease-out',
+      },
     },
   },
   plugins: [],

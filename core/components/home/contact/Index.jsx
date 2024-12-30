@@ -5,7 +5,7 @@ import { EMAIL } from "../../../utils/constants";
 const Contact = () => {
   return (
     <section id="contact" className="w-full">
-      <Wrapper className="flex-col mb-6 px-5 lg:my-32 items-center justify-center">
+      <Wrapper className="flex-col mb-6 px-5 lg:mt-32 mb-28 items-center justify-center">
         <div className="flex flex-col space-y-4 text-primary text-center dark:text-primary pb-12">
           <h1 className="tracking-wide text-2xl">Contacta conmigo</h1>
           <div className="flex flex-col text-center font-light space-y-1 leading-7 text-base">
