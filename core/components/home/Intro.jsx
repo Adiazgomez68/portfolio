@@ -6,14 +6,14 @@ const Intro = () => {
     <section id="intro" className="pt-24 md:pt-36">
       <Wrapper className="px-5 pb-8">
         <div className="grid grid-cols-1 space-y-5 md:gap-4 md:grid-cols-4">
-          <div className="flex flex-col col-span-3 space-y-1 items-start text-primary pb-5 md:pb-0">
+          <div className="flex flex-col col-span-3 space-y-1 items-start text-primary-dark dark:text-primary pb-5 md:pb-0">
             <h1 className="font-medium text-[3.7rem] md:text-[4.2rem] leading-none">
               Andrés Díaz
             </h1>
-            <h2 className="font-extralight text-4xl md:text-5xl text-primary/70">
+            <h2 className="font-extralight text-4xl md:text-5xl text-primary-dark/70 dark:text-primary/70">
               Desarrollador Web
             </h2>
-            <p className="font-light tracking-wide pt-6 md:pt-8 text-gray-900 text-left pr-5 dark:text-primary">
+            <p className="font-light tracking-wide pt-6 md:pt-8 text-primary-dark text-left pr-5 dark:text-primary">
               Soy Desarrollador Web con 2 años de experiencia, enfocado en la
               construcción de aplicaciones modernas y eficientes. He trabajado
               con startups, pequeñas empresas y proyectos individuales,

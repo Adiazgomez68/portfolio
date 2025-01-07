@@ -5,6 +5,7 @@
 @layer base {
   :root {
     --primary: 0 0% 78%;
+    --primary-dark: 207.273 23% 9%;
     --secondary: 201.529 73% 55%;
     --tertiary: 201 48% 17%;
 
@@ -20,7 +21,7 @@
 
 html,
 body {
-  background: #f7f6f6;
+  background: #f3f3f3;
   overflow: scroll;
   scroll-behavior: smooth;
   scroll-padding-top: 90px;

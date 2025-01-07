@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <section id="contact" className="w-full">
       <Wrapper className="flex-col mb-14 px-5 mt-20 md:mt-16 lg:mt-32 lg:mb-24 items-center justify-center">
-        <div className="flex flex-col space-y-4 text-primary text-center dark:text-primary pb-12">
+        <div className="flex flex-col space-y-4 text-primary-dark text-center dark:text-primary pb-12">
           <h1 className="tracking-wide text-2xl">Contacta conmigo</h1>
           <div className="flex flex-col text-center font-light space-y-1 leading-7 text-base">
             <span>¿Te gustaría ponerte en contacto conmigo?</span>

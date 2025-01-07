@@ -27,7 +27,7 @@ const Projects = () => {
         className="flex-col mb-6 px-5 mt-8 md:mt-6 lg:my-8 items-start justify-start"
         containerClassName="h-auto"
       >
-        <div className="flex flex-col space-y-2 text-primary dark:text-primary">
+        <div className="flex flex-col space-y-2 text-primary-dark dark:text-primary">
           <h1 className="tracking-wide text-2xl">Proyectos</h1>
           <span className="font-light">Algunas cosas que he construido</span>
         </div>
@@ -44,7 +44,7 @@ const Projects = () => {
             />
           ))}
         </div>
-        <div className="flex w-full justify-center items-center pt-14">
+        <div className="flex w-full justify-center items-center pt-14 sm:hidden">
           <Button onClick={toggleShowAll}>
             {showAll ? "Ver menos" : "Ver todos"}
           </Button>

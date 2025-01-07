@@ -32,7 +32,7 @@ const SidebarMenu = () => {
         </ul>
       </nav>
 
-      <p className="absolute bottom-10 w-full text-center font-inconsolada text-primary text-xs md:text-sm">
+      <p className="absolute bottom-10 w-full text-center font-inconsolada text-primary-dark dark:text-primary text-xs md:text-sm">
         Diseñado y construido por Andrés Díaz
       </p>
     </GlassContainer>

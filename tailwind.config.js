@@ -10,6 +10,7 @@ module.exports = {
     extend: {
       colors: {
         primary: "hsl(var(--primary))",
+        'primary-dark': "hsl(var(--primary-dark))",
         secondary: "hsl(var(--secondary))",
         tertiary: "hsl(var(--tertiary))"
       },

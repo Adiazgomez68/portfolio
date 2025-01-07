@@ -2,7 +2,7 @@ import { RightArrowTriangle } from "../../shared/icons/Arrows";
 
 const CardExperience = ({ experience }) => {
   return (
-    <article className="gap-5 grid text-primary">
+    <article className="gap-5 grid text-primary-dark dark:text-primary">
       <div className="flex justify-start flex-col md:flex-row md:justify-between items-start md:items-center font-semibold text-xl">
         <h1>{experience.company}</h1>
         <span className="text-sm font-normal">
@@ -21,8 +21,10 @@ const CardExperience = ({ experience }) => {
           </div>
         ))}
       </ul>
-      <div className="flex items-center text-sm text-white justify-start font-inconsolada">
-        <span className="py-1 px-2 rounded bg-white/10">{experience.job}</span>
+      <div className="flex items-center text-sm text-secondary dark:text-white justify-start font-inconsolada">
+        <span className="py-1 px-2 rounded dark:bg-white/10 bg-secondary/10">
+          {experience.job}
+        </span>
       </div>
     </article>
   );
