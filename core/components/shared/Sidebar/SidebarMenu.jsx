@@ -10,19 +10,19 @@ const SidebarMenu = () => {
 
   return (
     <GlassContainer
-      className={`fixed top-0 z-40 backdrop-blur-2xl w-full h-screen sm:hidden duration-300 ${
+      className={`fixed top-0 z-[60] backdrop-blur-2xl w-full h-screen sm:hidden duration-300 ${
         isOpen ? "-translate-x-0" : "-translate-x-full"
       }`}
     >
-      <nav className="fixed top-0 items-center w-full h-screen ">
-        <div className="flex items-center justify-between px-5 my-5">
-          <AppLogo className="w-40" />
-          <CloseSidebarButton />
-        </div>
-        <ul className="px-5">
+      <div className="flex items-center justify-between px-5 my-5 z-50">
+        <AppLogo className="w-40" />
+        <CloseSidebarButton />
+      </div>
+      <nav className="fixed top-0 items-center w-full">
+        <ul className="px-5 flex flex-col gap-10 justify-center items-center h-screen">
           {links.map((link, index) => (
             <NavBarLink
-              className="px-1 py-3 border-b border-primary dark:border-secondary dark:border-opacity-10 border-opacity-10"
+              className="px-1 py-3"
               onClick={close}
               key={index}
               link={link}
@@ -31,6 +31,10 @@ const SidebarMenu = () => {
           ))}
         </ul>
       </nav>
+
+      <p className="absolute bottom-10 w-full text-center font-inconsolada text-primary text-xs md:text-sm">
+        Diseñado y construido por Andrés Díaz
+      </p>
     </GlassContainer>
   );
 };

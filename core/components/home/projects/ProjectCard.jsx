@@ -24,7 +24,7 @@ const ProjectCard = ({ title, description, techs, link }) => {
             </div>
 
             <div className="space-y-3">
-              <h1 className="pb-1 tracking-wide hover:cursor-default font-semibold duration-200 lg:text-xl text-primary dark:text-primary">
+              <h1 className="pb-1 tracking-wide hover:cursor-default text-xl font-semibold duration-200 text-primary dark:text-primary">
                 {title}
               </h1>
               <p className="text-sm font-light tracking-wide text-primary">

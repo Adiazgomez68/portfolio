@@ -11,7 +11,7 @@ import Work from "../../shared/icons/work";
 const Experience = () => {
   return (
     <section id="experience" className="w-full">
-      <Wrapper className="flex-col mb-6 px-5 lg:my-8 items-start justify-start">
+      <Wrapper className="flex-col mb-6 mt-10 px-5 md:mt-6 lg:my-8 items-start justify-start">
         <div className="flex flex-col space-y-2 text-primary dark:text-primary pb-12">
           <h1 className="tracking-wide text-2xl">Experiencia laboral</h1>
           <span className="font-light">
