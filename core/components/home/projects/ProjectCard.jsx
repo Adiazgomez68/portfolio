@@ -1,7 +1,7 @@
 import Wrapper from "../../shared/Wrapper";
 import TechnologiesList from "./TechnologiesList";
 import Button from "../../shared/Button";
-import Star from "../../shared/icons/start";
+import Star from "../../shared/icons/Start";
 import ExternalLink from "../../shared/icons/ExternalLink";
 
 const ProjectCard = ({ title, description, techs, link }) => {
