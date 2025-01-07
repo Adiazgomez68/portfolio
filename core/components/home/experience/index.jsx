@@ -6,7 +6,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import CardExperience from "./card";
 import { experiences } from "../../../utils/data";
-import Work from "../../shared/icons/work";
+import Work from "../../shared/icons/Work";
 import { useTheme } from "next-themes";
 
 const Experience = () => {
