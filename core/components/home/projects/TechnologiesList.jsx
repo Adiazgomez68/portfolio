@@ -1,12 +1,12 @@
-import { IconSelector } from "../../shared/icons/Technologies";
-
-const TechnologiesList = ({ icon, color }) => {
+const TechnologiesList = ({ name }) => {
   return (
     <span
-      title={icon.name}
-      className="flex items-center p-2 bg-gray-200 rounded-full text-primary"
+      title={name}
+      className="flex items-center justify-center text-sm rounded-sm font-normal
+        text-secondary bg-secondary/10 uppercase py-1 px-2 hover:bg-secondary/10
+        duration-200 font-inconsolada cursor-default"
     >
-      {IconSelector(icon.id)}
+      {name}
     </span>
   );
 };

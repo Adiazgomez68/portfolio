@@ -4,15 +4,16 @@ import GlassContainer from "../GlassContainer";
 import NavBarLink from "./NavBarLink";
 import AppLogo from "../AppLogo";
 import SidebarButton from "../Sidebar/SidebarButton";
+import Link from "next/link";
 
 const Header = ({ className }) => {
   return (
-    <GlassContainer className="fixed top-0 z-30">
-      <header
-        className={`flex items-center w-full sm:py-0 py-2 bg-light ${className}`}
-      >
+    <GlassContainer className="fixed top-0 z-[60]">
+      <header className={`flex items-center w-full sm:py-1 py-3 ${className}`}>
         <Wrapper>
-          <AppLogo className="pl-5 w-52 sm:w-48" />
+          <Link href="/#intro" className="flex items-center">
+            <AppLogo className="pl-5 w-52 sm:w-48" />
+          </Link>
 
           <nav className="items-center justify-end hidden w-full pr-5 sm:flex">
             <ul className="flex justify-evenly">

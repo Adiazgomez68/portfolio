@@ -1,5 +1,5 @@
-import LightLogo from "../../../public/images/Light_Logo.svg";
-import DarkLogo from "../../../public/images/Dark_Logo.svg";
+import LightLogo from "../../../public/images/Logo-light.png";
+import DarkLogo from "../../../public/images/Logo.png";
 import Image from "next/image";
 import { useTheme } from "next-themes";
 
@@ -13,7 +13,7 @@ const AppLogo = ({ className = "" }) => {
         alt="Logo portfolio"
         width={100}
         height={100}
-        className="w-full"
+        className="w-[3rem]"
       />
     </picture>
   );
