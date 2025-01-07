@@ -5,8 +5,8 @@ const CloseSidebarButton = () => {
   const { close } = useSidebar();
 
   return (
-    <button onClick={close} className="duration-200 active:scale-75">
-      <Close className="text-primary dark:text-secondary" />
+    <button onClick={close} className="duration-200 z-50 active:scale-75">
+      <Close className="text-primary-dark dark:text-primary w-8 h-8" />
     </button>
   );
 };

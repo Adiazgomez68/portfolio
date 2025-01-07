@@ -1,18 +1,14 @@
 export const links = [
   {
-    name: "Home",
-    url: "/#intro",
-  },
-  {
-    name: "Skills",
-    url: "/#skills",
-  },
-  {
-    name: "Portfolio",
+    name: "Proyectos",
     url: "/#projects",
   },
   {
-    name: "Contact",
+    name: "Experiencia",
+    url: "/#experience",
+  },
+  {
+    name: "Contacto",
     url: "/#contact",
   },
   {
