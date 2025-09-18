@@ -22,16 +22,9 @@
 html,
 body {
   background: #f3f3f3;
-  overflow: scroll;
   scroll-behavior: smooth;
   scroll-padding-top: 90px;
   @apply dark:bg-[#12181d];
-}
-
-/* @apply dark:bg-[#001933] */
-
-::-webkit-scrollbar {
-  display: none;
 }
 
 .font-inconsolada {

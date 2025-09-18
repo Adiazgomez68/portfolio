@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@headlessui/react": "^1.7.11",
+    "@headlessui/react": "^1.7.19",
     "@next/font": "13.1.5",
     "eslint": "8.32.0",
     "eslint-config-next": "13.1.5",
@@ -22,7 +22,8 @@
     "react-hook-form": "^7.43.2",
     "react-multi-carousel": "^2.8.2",
     "react-toastify": "^9.1.1",
-    "react-vertical-timeline-component": "^3.5.3"
+    "react-vertical-timeline-component": "^3.5.3",
+    "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
