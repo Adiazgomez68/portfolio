@@ -7,7 +7,7 @@ const NavBarLink = ({ link, index, onClick, className = "" }) => {
       {link.name !== "DarkMode" ? (
         <Link key={index} href={link.url} onClick={onClick}>
           <li
-            className={`p-1.5 dark:font-normal font-inconsolada tracking-wide text-primary-dark dark:text-primary duration-300 md:text-sm text-lg hover:text-secondary dark:hover:text-secondary ${className}`}
+            className={`p-1.5 dark:font-normal font-inconsolada tracking-wide text-secondary-dark dark:text-secondary duration-300 text-sm hover:text-primary dark:hover:text-primary ${className}`}
           >
             {link.name}
           </li>

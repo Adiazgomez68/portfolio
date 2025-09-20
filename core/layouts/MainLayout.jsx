@@ -7,14 +7,14 @@ const MainLayout = ({ children }) => {
   return (
     <>
       <Head>
-        <title> Andrés Díaz - Web Developer </title>
+        <title> Andrés Díaz - Frontend Developer </title>
         <meta
           name="description"
           content="This is my portfolio created with NextJs and Tailwind Css. Here i show my jobs and my work experience."
         />
       </Head>
 
-      <div className="relative flex flex-col w-full h-screen">
+      <div className="relative flex flex-col w-full h-full">
         <Header />
         <SidebarMenu />
         <div className="flex flex-col w-full my-5"> {children} </div>

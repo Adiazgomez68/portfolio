@@ -26,7 +26,7 @@ const Header = ({ className }) => {
         isScrolled ? "dark:border-gray-50/10 dark:bg-[#13192c]/60 bg-white shadow-sm" : ""
       )}
     >
-      <header className={`flex items-center rounded-full ${className}`}>
+      <header className={`flex w-full items-center rounded-full ${className}`}>
         <nav className="items-center flex">
           <ul className="flex">
             {links.map((link, index) => (

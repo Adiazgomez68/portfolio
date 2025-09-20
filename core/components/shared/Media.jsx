@@ -5,7 +5,7 @@ import Wrapper from "./Wrapper";
 const Media = ({ children }) => {
   return (
     <Wrapper
-      className="hidden xl:flex xl:flex-col xl:py-10 xl:text-primary xl:dark:text-secondary"
+      className="hidden xl:flex xl:flex-col z-[99] xl:py-10 xl:text-primary xl:dark:text-secondary"
       maxScreen="max-w-screen-xl"
     >
       <div className="flex flex-col items-center space-y-6 fixed left-28 bottom-0 animate-fade-up">

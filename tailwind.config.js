@@ -13,6 +13,8 @@ module.exports = {
         "primary-dark": "hsl(var(--primary-dark))",
         secondary: "hsl(var(--secondary))",
         tertiary: "hsl(var(--tertiary))",
+        "subtle-glow": "hsl(var(--subtle-glow))",
+        forty: "hsl(var(--forty))",
       },
       fontSize: {
         sm: "15px",
@@ -30,6 +32,7 @@ module.exports = {
       animation: {
         "fade-up": "fadeUp 0.7s ease-out",
         "fade-in": "fade-in .1s ease-in-out",
+        typing: "typing 3.5s steps(40, end)",
       },
     },
   },
