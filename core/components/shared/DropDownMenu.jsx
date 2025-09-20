@@ -24,20 +24,19 @@ const DropDownMenu = () => {
   };
 
   const getCurrentThemeIcon = () => {
-    if (!mounted)
-      return <Moon className="relative left-7 text-[#15CDDB]" size="1.5em" />;
+    if (!mounted) return <Moon className="relative left-7 text-primary" size="1.5em" />;
 
     const currentTheme = theme === "system" ? systemTheme : theme;
 
     if (currentTheme === "dark") {
-      return <Moon className="relative left-0 text-[#15CDDB]" size="1.5em" />;
+      return <Moon className="relative left-0 text-primary" size="1.5em" />;
     } else {
       return <Sun className="relative left-0 text-yellow-400" size="1.5em" />;
     }
   };
 
   if (!mounted) {
-    return <Moon className="relative left-7 text-[#15CDDB]" size="1.5em" />;
+    return <Moon className="relative left-7 text-primary" size="1.5em" />;
   }
 
   return (
@@ -50,8 +49,7 @@ const DropDownMenu = () => {
         <div className="py-1">
           {themeOptions.map((option) => {
             const IconComponent = option.icon;
-            const isActive =
-              (theme === "system" ? systemTheme : theme) === option.id;
+            const isActive = (theme === "system" ? systemTheme : theme) === option.id;
 
             return (
               <Menu.Item key={option.id} as={Fragment}>

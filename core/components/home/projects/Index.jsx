@@ -11,9 +11,7 @@ const Projects = () => {
   const { responsiveSize } = useWindowSize();
 
   const visibleProjects =
-    (showAll || responsiveSize !== "xs") && loading
-      ? projects
-      : projects.slice(0, 3);
+    (showAll || responsiveSize !== "xs") && loading ? projects : projects.slice(0, 3);
 
   const toggleShowAll = () => setShowAll((prev) => !prev);
 
@@ -22,7 +20,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <section id="projects" className="w-full">
+    <section id="projects" className="w-full z-[50] dark:bg-[#12181d]">
       <Wrapper
         className="flex-col mb-6 px-5 mt-8 md:mt-6 lg:my-8 items-start justify-start"
         containerClassName="h-auto"
@@ -45,9 +43,7 @@ const Projects = () => {
           ))}
         </div>
         <div className="flex w-full justify-center items-center pt-14 sm:hidden">
-          <Button onClick={toggleShowAll}>
-            {showAll ? "Ver menos" : "Ver todos"}
-          </Button>
+          <Button onClick={toggleShowAll}>{showAll ? "Ver menos" : "Ver todos"}</Button>
         </div>
       </Wrapper>
     </section>

@@ -1,9 +1,9 @@
-const IoIosArrowForward = (props) => {
+export const IoIosArrowForward = (props) => {
   return (
     <svg
       stroke="currentColor"
       fill="currentColor"
-      strokeWidth="15px"
+      strokeWidth="1px"
       viewBox="0 0 512 512"
       height="1.3em"
       width="1.6em"
