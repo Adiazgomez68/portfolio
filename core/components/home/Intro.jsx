@@ -60,7 +60,7 @@ const Intro = () => {
       </div>
 
       <Wrapper className="px-5 pb-8">
-        <div className="text-center z-10 max-w-4xl mx-auto px-6">
+        <div className="text-center z-10 max-w-4xl mx-auto">
           <div className="flex justify-center items-center mb-8">
             <div className="rounded-full border-2 border-primary size-[150px]">
               <Image src="/images/photo.jpeg" width={150} height={150} className="rounded-full" />

@@ -23,6 +23,8 @@ export const projects = [
       },
     ],
     link: "https://github.com/Adiazgomez68/interactive-maps",
+    icon: "/images/logos/i-maps.png",
+    styles: "bg-white",
   },
   {
     id: 2,
@@ -35,8 +37,8 @@ export const projects = [
         name: "Next.js",
       },
       {
-        id: "react.js",
-        name: "React.js",
+        id: "typescript",
+        name: "TypeScript",
       },
       {
         id: "tailwindcss",
@@ -44,6 +46,8 @@ export const projects = [
       },
     ],
     link: "https://hibeautybox.es/",
+    icon: "/images/logos/hib-es.png",
+    styles: "p-1 bg-white",
   },
   {
     id: 3,
@@ -51,10 +55,6 @@ export const projects = [
     description:
       "Sitema de gestión integrada de planes institucionales para la Universidad de Córdoba.",
     technologies: [
-      {
-        id: "html5",
-        name: "Html5",
-      },
       {
         id: "laravel",
         name: "Laravel",
@@ -69,30 +69,41 @@ export const projects = [
       },
     ],
     link: "https://planesinstitucionales.appsprod.unicordoba.edu.co/",
+    icon: "/images/logos/plans.png",
+    styles: "object-cover",
   },
   {
     id: 4,
-    title: "Dashboard Hi Beauty ES",
+    title: "Schaller Rossi & Partners",
     description:
-      "Sistema administrativo para Hi Beauty de España, desarrollado para la gestión de los usuarios suscritos a Hi Beauty.",
+      "Firma internacional de arquitectura e interiores que ofrece servicios de diseño y construcción 'llave en mano'.",
     technologies: [
       {
         id: "next.js",
         name: "Next.js",
       },
       {
-        id: "react.js",
-        name: "React.js",
+        id: "typescript",
+        name: "TypeScript",
       },
       {
         id: "tailwindcss",
         name: "Tailwind CSS",
       },
+      {
+        id: "i18n",
+        name: "i18n",
+      },
     ],
-    link: "https://dashboard.hibeautybox.es/",
+    link: "https://www.schallerrossi.com/es",
+    icon: "/images/logos/sr&p.jpg",
+    styles: "p-0",
   },
+];
+
+export const otherProjects = [
   {
-    id: 5,
+    id: 1,
     title: "StartupsLab | EDU",
     description:
       "Una plataforma para emprendedores donde encontrarán cursos y talleres para aprender marketing, diseño y emprendimiento.",
@@ -113,7 +124,7 @@ export const projects = [
     link: "https://stirring-starburst-f86dd8.netlify.app",
   },
   {
-    id: 6,
+    id: 2,
     title: "Pool landing",
     description: "Una landing page para ofrecer servicios de piscinas.",
     technologies: [
@@ -140,20 +151,21 @@ export const experiences = [
     logo: "/images/logos/hib.png",
     functions: [
       {
-        item: "Incorporación de nuevas características y funcionalidades en el sistema administrativo.",
+        item: "Desarrollo del sitio web para el lanzamiento de Hi Beauty en España.",
       },
       {
-        item: "Creación de filtros de búsqueda para tienda online, y soporte en web de ventas de suscripciones.",
+        item: "Incorporación de nuevas características clave en el sistema administrativo.",
       },
       {
-        item: "Integración de métodos de pago.",
+        item: "Creación de filtros de búsqueda para la tienda online y soporte en la web de ventas por suscripción.",
       },
       {
-        item: "Desarrollo de la web Hi Beauty Es para ventas de suscripción de cajas de belleza en España.",
+        item: "Implementación de nuevos métodos de pago.",
       },
     ],
     date: "Dic 2023",
     job: "Desarrollador Frontend",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
     currentJob: true,
   },
   {
@@ -161,14 +173,15 @@ export const experiences = [
     logo: "/images/logos/parquesoft-sucre.webp",
     functions: [
       {
-        item: "Construcción de sistema administrativo para la gestión de planes institucionales de la Universidad de Córdoba.",
+        item: "Construcción desde cero de un sistema administrativo para la gestión de planes institucionales.",
       },
       {
-        item: "Configuración de inicio de sesión con Google OAuth2 para acceso a usuarios con correos electrónicos institucionales.",
+        item: "Configuración e implementación de Google OAuth2 para un inicio de sesión seguro y eficiente.",
       },
     ],
     date: "Mar 2023 - Dic 2024",
     job: "Desarrollador Web",
+    technologies: ["Laravel", "PHP", "Tailwind CSS"],
     currentJob: false,
   },
   {
@@ -176,17 +189,18 @@ export const experiences = [
     logo: "/images/logos/startupslab.png",
     functions: [
       {
-        item: "Maquetación de plataforma de educación en línea para emprendedores.",
+        item: "Maquetación completa de una plataforma de educación en línea para emprendedores.",
       },
       {
-        item: "Creación de planes para ventas de subscripciones en línea de tarjetas didácticas.",
+        item: "Creación y despliegue de un sistema para la venta de suscripciones de tarjetas didácticas.",
       },
       {
-        item: "Manejo de servidores aws para despliegues a producción de sitios web.",
+        item: "Administración de despliegues y mantenimiento de sitios web en producción utilizando AWS (EC2, S3).",
       },
     ],
     date: "2022 - 2023",
     job: "Desarrollador Frontend",
+    technologies: ["Next.js", "JavaScript", "Tailwind CSS"],
     currentJob: false,
   },
 ];
