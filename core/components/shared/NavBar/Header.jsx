@@ -1,7 +1,6 @@
 import { links } from "../../../utils/routes";
 import GlassContainer from "../GlassContainer";
 import NavBarLink from "./NavBarLink";
-import SidebarButton from "../Sidebar/SidebarButton";
 import { useEffect, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
@@ -28,7 +27,7 @@ const Header = ({ className }) => {
     >
       <header className={`flex w-full items-center rounded-full ${className}`}>
         <nav className="items-center flex">
-          <ul className="flex">
+          <ul className="flex gap-x-1">
             {links.map((link, index) => (
               <NavBarLink key={index} link={link} index={index} />
             ))}

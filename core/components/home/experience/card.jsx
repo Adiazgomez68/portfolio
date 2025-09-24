@@ -29,6 +29,16 @@ const CardExperience = ({ experience }) => {
           </div>
         ))}
       </ul>
+      <div className="flex flex-wrap gap-2">
+        {experience.technologies.map((tech) => (
+          <span
+            key={tech}
+            className="px-3 py-1 dark:bg-gray-50/5 text-[13px] hover:cursor-default rounded-full text-muted-foreground dark:hover:bg-primary/10 dark:hover:text-primary transition-all duration-200"
+          >
+            {tech}
+          </span>
+        ))}
+      </div>
     </article>
   );
 };

@@ -1,16 +1,20 @@
 export const links = [
   {
-    name: "Proyectos",
-    url: "/#projects",
+    name: "Inicio",
+    url: "/",
   },
   {
     name: "Experiencia",
     url: "/#experience",
   },
   {
+    name: "Proyectos",
+    url: "/#projects",
+  },
+  /* {
     name: "Contacto",
     url: "/#contact",
-  },
+  }, */
   {
     name: "DarkMode",
     url: "",
