@@ -1,7 +1,7 @@
 export const links = [
   {
     name: "Inicio",
-    url: "/",
+    url: "/#intro",
   },
   {
     name: "Experiencia",

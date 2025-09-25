@@ -20,7 +20,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <section id="projects" className="w-full z-[50] dark:bg-[#12181d]">
+    <section id="projects" className="w-full">
       <Wrapper
         className="flex-col mb-6 px-5 mt-8 md:mt-6 lg:my-8 items-center justify-center"
         containerClassName="h-auto"

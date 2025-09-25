@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { useEffect } from "react";
 import Footer from "../components/shared/footer/Footer";
 import Header from "../components/shared/NavBar/Header";
 import SidebarMenu from "../components/shared/Sidebar/SidebarMenu";
