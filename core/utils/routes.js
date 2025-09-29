@@ -1,6 +1,6 @@
 export const links = [
   {
-    name: "Inicio",
+    name: "Sobre mí",
     url: "/#intro",
   },
   {

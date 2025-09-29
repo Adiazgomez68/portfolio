@@ -1,24 +1,8 @@
 import Wrapper from "../../shared/Wrapper";
 import ProjectCard from "./ProjectCard";
-import { otherProjects, projects } from "../../../utils/data";
-import Button from "../../shared/Button";
-import { useEffect, useState } from "react";
-import useWindowSize from "../../../hooks/useWindowSize";
+import { projects } from "../../../utils/data";
 
 const Projects = () => {
-  const [showAll, setShowAll] = useState(false);
-  const [loading, setLoading] = useState(false);
-  const { responsiveSize } = useWindowSize();
-
-  const visibleProjects =
-    (showAll || responsiveSize !== "xs") && loading ? projects : projects.slice(0, 3);
-
-  const toggleShowAll = () => setShowAll((prev) => !prev);
-
-  useEffect(() => {
-    setLoading(true);
-  }, []);
-
   return (
     <section id="projects" className="w-full">
       <Wrapper
@@ -29,7 +13,7 @@ const Projects = () => {
         <div
           className={`grid md:grid-cols-2 lg:grid-cols-2 gap-4 pt-7 duration-500 ease-in-out overflow-hidden`}
         >
-          {visibleProjects.map((project) => (
+          {projects.map((project) => (
             <ProjectCard
               key={project.id}
               id={project.id}
@@ -39,12 +23,9 @@ const Projects = () => {
               link={project.link}
               icon={project.icon}
               styles={project.styles}
+              animation={project.animation}
             />
           ))}
-        </div>
-
-        <div className="flex w-full justify-center items-center pt-14 sm:hidden">
-          <Button onClick={toggleShowAll}>{showAll ? "Ver menos" : "Ver todos"}</Button>
         </div>
       </Wrapper>
     </section>

@@ -6,11 +6,11 @@ const Footer = () => {
     <section id="footer" className="w-full h-full z-[50] dark:bg-[#12181d]">
       <Wrapper className="flex-col py-10 text-primary-dark dark:text-secondary space-y-5 xl:space-y-5">
         <div className="space-x-5 justify-center items-center flex">
-          <LinkedIn className="text-primary-dark duration-300 dark:hover:text-primary dark:text-secondary hover:text- hover:-translate-y-1" />
-          <Github className="text-primary-dark duration-300 dark:text-secondary dark:hover:text-primary hover:text-secondary hover:-translate-y-1" />
-          <Email className="text-secondary dark:text-secondary duration-300 dark:hover:text-primary hover:-translate-y-1" />
+          <LinkedIn className="hover:text-secondary text-gray-600 duration-300 dark:hover:text-primary dark:text-secondary hover:text- hover:-translate-y-1" />
+          <Github className="text-gray-600 duration-300 dark:text-secondary dark:hover:text-primary hover:text-secondary hover:-translate-y-1" />
+          <Email className="text-gray-600 dark:text-secondary duration-300 dark:hover:text-primary hover:-translate-y-1 hover:text-secondary" />
         </div>
-        <p className="w-full text-center font-inconsolada text-primary-dark dark:text-secondary text-xs md:text-sm">
+        <p className="w-full text-center font-inconsolada text-gray-700 dark:text-secondary text-xs md:text-sm">
           Diseñado y construido por <strong>Andrés Díaz</strong>
         </p>
       </Wrapper>
