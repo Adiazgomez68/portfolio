@@ -4,12 +4,40 @@
 
 @layer base {
   :root {
-    --primary: 0 0% 78%;
-    --primary-dark: 207.273 23% 9%;
-    --secondary: 201.529 73% 55%;
-    --tertiary: 201 48% 17%;
+    /* DARK MODE */
+    --primary: 180 100% 50%;
+    --primary-foreground: 0 0% 7%;
+    
+    --secondary: 0 0% 78%;
+    --secondary-dark: 207.273 23% 9%;
+
+    --tertiary: 201.529 73% 55%;
+    --tertiary-foreground: 201 48% 17%;
+
+    --forty: 124 93% 59%;
 
     --font-inconsolada: "Inconsolata", monospace;
+
+    --accent: 135 100% 50%;
+    --accent-light: 184 85% 47%;
+    --card-hover: 0 0% 13%;
+    --subtle-glow: 0 0 20px hsl(var(--accent) / 0.2);
+
+    --glow: 0 0 40px hsl(var(--primary) / 0.3);
+
+    --transition-smooth: all 0.2s cubic-bezier(0.4, 0, 0.2, 0.5);
+
+    /* LIGHT MODE */
+    --primary-light: 221 83% 53%;
+  }
+}
+
+@layer components {
+  .typing-animation {
+    overflow: hidden;
+    border-right: 2px solid hsl(var(--primary));
+    white-space: nowrap;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
   }
 }
 
@@ -21,17 +49,10 @@
 
 html,
 body {
-  background: #f3f3f3;
-  overflow: scroll;
+  background: #FAFAFA;
   scroll-behavior: smooth;
   scroll-padding-top: 90px;
   @apply dark:bg-[#12181d];
-}
-
-/* @apply dark:bg-[#001933] */
-
-::-webkit-scrollbar {
-  display: none;
 }
 
 .font-inconsolada {
@@ -44,7 +65,7 @@ body {
 }
 
 .vertical-timeline::before {
-  width: 2px !important;
+  width: 1px !important;
 }
 
 .vertical-timeline-element:first-child {
@@ -52,7 +73,15 @@ body {
 }
 
 .vertical-timeline-element {
-  margin: 2.5rem 0 !important;
+  margin: 1.5rem 0 !important;
+}
+
+.vertical-timeline-element-content {
+  padding: 0;
+}
+
+.vertical-timeline-element-content p {
+  margin-top: 0 !important;
 }
 
 .vertical-timeline-element-icon.shadow-size-small {
@@ -68,4 +97,28 @@ body {
 
 .vertical-timeline-element-content .vertical-timeline-element-date {
   display: none !important;
+}
+
+.glow-text {
+  text-shadow: var(--subtle-glow);
+}
+
+.card-hover {
+  transition: var(--transition-smooth);
+}
+
+.card-hover:hover {
+  background-color: hsl(var(--primary));
+  transform: translateY(-5px);
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: hsl(var(--primary)) }
+}
+
+@media screen and (max-width: 768px) {
+  .vertical-timeline-element-content {
+    padding: 0.5rem !important;
+  }
 }

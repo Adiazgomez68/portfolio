@@ -1,34 +1,44 @@
 import { links } from "../../../utils/routes";
-import Wrapper from "../Wrapper";
 import GlassContainer from "../GlassContainer";
 import NavBarLink from "./NavBarLink";
-import AppLogo from "../AppLogo";
-import SidebarButton from "../Sidebar/SidebarButton";
-import Link from "next/link";
+import { useEffect, useState } from "react";
+import { twMerge } from "tailwind-merge";
 
 const Header = ({ className }) => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 30);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <GlassContainer className="fixed top-0 z-[60]">
-      <header className={`flex items-center w-full sm:py-1 py-3 ${className}`}>
-        <Wrapper>
-          <Link href="/#intro" className="flex items-center">
-            <AppLogo className="pl-5 w-52 sm:w-48" />
-          </Link>
+    <header className={`flex w-full items-center justify-center rounded-full ${className}`}>
+      <GlassContainer
+        className={twMerge(
+          "fixed border !w-auto border-transparent top-3 z-[60] !rounded-full px-3 duration-200 left-1/2 -translate-x-1/2 min-w-fit",
+          isScrolled ? "dark:border-gray-50/10 dark:bg-[#13192c]/60 bg-white shadow-sm" : ""
+        )}
+      >
+        <nav className="items-center flex">
+          <ul className="flex flex-shrink-0">
+            {links.map((link, index) => (
+              <NavBarLink key={index} link={link} index={index} />
+            ))}
+          </ul>
+        </nav>
+      </GlassContainer>
 
-          <nav className="items-center justify-end hidden w-full pr-5 sm:flex">
-            <ul className="flex justify-evenly">
-              {links.map((link, index) => (
-                <NavBarLink key={index} link={link} index={index} />
-              ))}
-            </ul>
-          </nav>
-
-          <div className="flex items-center justify-end w-full pr-5 sm:hidden">
-            <SidebarButton />
-          </div>
-        </Wrapper>
-      </header>
-    </GlassContainer>
+      {/* <div className="flex items-center justify-end w-full pr-5 sm:hidden">
+          <SidebarButton />
+        </div> */}
+    </header>
   );
 };
 

@@ -23,6 +23,7 @@ const SwitchToggle = () => {
   useEffect(() => {
     setMounted(true);
     setTheme("system");
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {

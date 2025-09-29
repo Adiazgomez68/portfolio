@@ -26,9 +26,9 @@ const Button = ({
             type={type}
             onClick={onClick}
             disabled={disabled}
-            className={`flex items-center justify-center border rounded-md font-normal
-              border-secondary text-secondary bg-transparent py-[0.6rem] w-48 hover:bg-secondary/10
-              duration-200 font-inconsolada ${className}`}
+            className={`flex items-center justify-center rounded-md font-normal
+              text-secondary bg-transparent py-[0.6rem] w-48 hover:bg-secondary/10
+              duration-200 ${className}`}
           >
             {children}
           </button>

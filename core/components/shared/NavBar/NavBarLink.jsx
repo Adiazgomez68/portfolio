@@ -1,5 +1,6 @@
 import Link from "next/link";
-import SwitchToggle from "../SwitchToggle";
+import DropDownMenu from "../DropDownMenu";
+import { twMerge } from "tailwind-merge";
 
 const NavBarLink = ({ link, index, onClick, className = "" }) => {
   return (
@@ -7,13 +8,16 @@ const NavBarLink = ({ link, index, onClick, className = "" }) => {
       {link.name !== "DarkMode" ? (
         <Link key={index} href={link.url} onClick={onClick}>
           <li
-            className={`p-5 dark:font-normal font-inconsolada tracking-wide text-primary-dark dark:text-primary duration-300 md:text-sm text-lg hover:text-secondary dark:hover:text-secondary ${className}`}
+            className={twMerge(
+              "px-2 py-1.5 sm:px-3 sm:py-1.5 dark:font-light tracking-wide text-secondary-dark dark:text-secondary duration-300 text-[13px] sm:text-[14px] hover:text-primary-light dark:hover:text-primary whitespace-nowrap flex-shrink-0",
+              className
+            )}
           >
             {link.name}
           </li>
         </Link>
       ) : (
-        <SwitchToggle />
+        <DropDownMenu />
       )}
     </div>
   );

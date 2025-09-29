@@ -1,29 +1,23 @@
 import Wrapper from "../../shared/Wrapper";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
+import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import CardExperience from "./card";
 import { experiences } from "../../../utils/data";
-import Work from "../../shared/icons/Work";
 import { useTheme } from "next-themes";
+import Image from "next/image";
 
 const Experience = () => {
   const { theme } = useTheme();
 
   return (
     <section id="experience" className="w-full">
-      <Wrapper className="flex-col mb-6 mt-10 px-5 md:mt-6 lg:my-8 items-start justify-start">
-        <div className="flex flex-col space-y-2 text-primary-dark dark:text-primary pb-12">
-          <h1 className="tracking-wide text-2xl">Experiencia laboral</h1>
-          <span className="font-light">
-            Mi recorrido profesional como desarrollador web
-          </span>
-        </div>
+      <Wrapper className="flex-col mb-6 mt-10 px-5 md:mt-6 lg:mt-14 items-center justify-center">
+        <h2 className="text-3xl font-semibold text-center mb-10 glow-text">
+          Experiencia Profesional
+        </h2>
         <VerticalTimeline
           layout="1-column-left"
-          lineColor="hsl(var(--secondary))"
+          lineColor={theme === "light" ? "#e2e2e2" : "#34393F"}
           className="w-full"
         >
           {experiences.map((e) => (
@@ -43,10 +37,17 @@ const Experience = () => {
                 borderRight: "none",
               }}
               iconStyle={{
-                background: theme === "light" ? "#f3f3f3" : "#12181d",
-                color: "hsl(var(--secondary))",
+                color: theme === "light" ? "#e0e0e0" : "hsl(var(--secondary))",
+                overflow: "hidden",
               }}
-              icon={<Work />}
+              icon={
+                <Image
+                  key={e.company}
+                  src={e.logo ?? "/images/Logo.png"}
+                  width={200}
+                  height={200}
+                />
+              }
             >
               <CardExperience experience={e} />
             </VerticalTimelineElement>

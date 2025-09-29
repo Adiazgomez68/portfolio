@@ -11,9 +11,9 @@ export default function Home() {
     <MainLayout>
       <Intro />
       {/* <Skills /> */}
-      <Portfolio />
       <Experience />
-      <Contact />
+      <Portfolio />
+      {/* <Contact /> */}
       <Media />
     </MainLayout>
   );
