@@ -19,26 +19,26 @@ const Header = ({ className }) => {
   }, []);
 
   return (
-    <GlassContainer
-      className={twMerge(
-        "fixed !w-auto border border-transparent top-3 z-[60] !rounded-full px-3 left-1/2 duration-200 -translate-x-1/2",
-        isScrolled ? "dark:border-gray-50/10 dark:bg-[#13192c]/60 bg-white shadow-sm" : ""
-      )}
-    >
-      <header className={`flex w-full items-center rounded-full ${className}`}>
+    <header className={`flex w-full items-center justify-center rounded-full ${className}`}>
+      <GlassContainer
+        className={twMerge(
+          "fixed border !w-auto border-transparent top-3 z-[60] !rounded-full px-3 duration-200 left-1/2 -translate-x-1/2 min-w-fit",
+          isScrolled ? "dark:border-gray-50/10 dark:bg-[#13192c]/60 bg-white shadow-sm" : ""
+        )}
+      >
         <nav className="items-center flex">
-          <ul className="flex gap-x-1">
+          <ul className="flex flex-shrink-0">
             {links.map((link, index) => (
               <NavBarLink key={index} link={link} index={index} />
             ))}
           </ul>
         </nav>
+      </GlassContainer>
 
-        {/* <div className="flex items-center justify-end w-full pr-5 sm:hidden">
+      {/* <div className="flex items-center justify-end w-full pr-5 sm:hidden">
           <SidebarButton />
         </div> */}
-      </header>
-    </GlassContainer>
+    </header>
   );
 };
 

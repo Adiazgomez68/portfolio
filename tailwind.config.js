@@ -11,10 +11,12 @@ module.exports = {
       colors: {
         primary: "hsl(var(--primary))",
         "primary-dark": "hsl(var(--primary-dark))",
+        "primary-light": "hsl(var(--primary-light))",
         secondary: "hsl(var(--secondary))",
         tertiary: "hsl(var(--tertiary))",
         "subtle-glow": "hsl(var(--subtle-glow))",
         forty: "hsl(var(--forty))",
+        "accent-light": "hsl(var(--accent-light))",
       },
       fontSize: {
         sm: "15px",

@@ -15,7 +15,11 @@ const Experience = () => {
         <h2 className="text-3xl font-semibold text-center mb-10 glow-text">
           Experiencia Profesional
         </h2>
-        <VerticalTimeline layout="1-column-left" lineColor="#34393F" className="w-full">
+        <VerticalTimeline
+          layout="1-column-left"
+          lineColor={theme === "light" ? "#e2e2e2" : "#34393F"}
+          className="w-full"
+        >
           {experiences.map((e) => (
             <VerticalTimelineElement
               key={e.company}
@@ -33,8 +37,7 @@ const Experience = () => {
                 borderRight: "none",
               }}
               iconStyle={{
-                background: theme === "light" ? "#f3f3f3" : "#12181d",
-                color: "hsl(var(--secondary))",
+                color: theme === "light" ? "#e0e0e0" : "hsl(var(--secondary))",
                 overflow: "hidden",
               }}
               icon={

@@ -25,6 +25,10 @@ export const projects = [
     link: "https://github.com/Adiazgomez68/interactive-maps",
     icon: "/images/logos/i-maps.png",
     styles: "bg-white",
+    animation: {
+      type: "fade-right",
+      delay: "0",
+    },
   },
   {
     id: 2,
@@ -48,6 +52,10 @@ export const projects = [
     link: "https://hibeautybox.es/",
     icon: "/images/logos/hib-es.png",
     styles: "p-1 bg-white",
+    animation: {
+      type: "fade-left",
+      delay: "200",
+    },
   },
   {
     id: 3,
@@ -71,6 +79,10 @@ export const projects = [
     link: "https://planesinstitucionales.appsprod.unicordoba.edu.co/",
     icon: "/images/logos/plans.png",
     styles: "object-cover",
+    animation: {
+      type: "fade-right",
+      delay: "300",
+    },
   },
   {
     id: 4,
@@ -98,6 +110,10 @@ export const projects = [
     link: "https://www.schallerrossi.com/es",
     icon: "/images/logos/sr&p.jpg",
     styles: "p-0",
+    animation: {
+      type: "fade-left",
+      delay: "400",
+    },
   },
 ];
 
