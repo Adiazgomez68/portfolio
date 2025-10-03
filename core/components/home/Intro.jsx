@@ -42,6 +42,7 @@ const Intro = () => {
     <section id="intro" className="pt-24 md:pt-36 md:pb-24 relative">
       {mounted && (
         <div
+          className="hidden lg:block"
           style={{ width: "100%", height: "100%", position: "absolute", top: "0", zIndex: "20" }}
         >
           <Particles
@@ -66,6 +67,7 @@ const Intro = () => {
               speed={1}
               chaos={0.6}
               thickness={2}
+              className="hidden lg:block"
               style={{ borderRadius: "100%", width: "180px", height: "180px" }}
             >
               <div className="rounded-full border-2 border-primary-light dark:border-primary size-[180px] relative top-0.5">
