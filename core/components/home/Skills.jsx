@@ -1,46 +1,45 @@
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import { responsive } from "../../utils/constants";
-import { skills } from "../../utils/items";
-import { FifthTitle, ThirdTitle } from "../shared/Titles";
 import Wrapper from "../shared/Wrapper";
-import { CustomLeftArrow, CustomRightArrow } from "../shared/icons/Arrows";
-import HorizontalLine from "../shared/icons/HorizontalLine";
+import LogoLoop from "../motions/LogoLoop";
+import { techLogos } from "../../utils/items";
+import { useState, useEffect } from "react";
+import { useTheme } from "next-themes";
 
 const Skills = () => {
-  return (
-    <section id="skills" className="w-full my-12">
-      <Wrapper className="flex-col pb-10 space-y-11">
-        <ThirdTitle
-          text="My skills"
-          className="tracking-wide text-center text-primary dark:text-secondary"
-        />
-        <Carousel
-          responsive={responsive}
-          autoPlay
-          infinite
-          className="w-full"
-          customLeftArrow={<CustomLeftArrow />}
-          customRightArrow={<CustomRightArrow />}
-        >
-          {skills.map((skill, index) => (
-            <div
-              key={index}
-              className="flex flex-col items-center justify-center space-y-3 overflow-hidden"
-            >
-              <div className="flex items-center justify-center w-20 h-20 rounded-full bg-[#f7f6f6]">
-                <img src={skill.item} className="w-3/5" alt={skill.name} />
-              </div>
-              <FifthTitle
-                className="text-[15px] text-primary dark:text-secondary"
-                text={skill.name}
-              />
-            </div>
-          ))}
-        </Carousel>
-      </Wrapper>
+  const { theme, systemTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+  const currentTheme = theme === "system" ? systemTheme : theme;
 
-      <HorizontalLine className="left-0 transform rotate-180 md:opacity-50" />
+  let fadeOutColor = "";
+
+  if (currentTheme === "dark") {
+    fadeOutColor = "#12181D";
+  } else {
+    fadeOutColor = "#EEEEEE";
+  }
+
+  useEffect(() => {
+    setMounted(true);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  if (!mounted) return;
+
+  return (
+    <section id="skills" className="w-full mt-12">
+      <Wrapper className="flex-col pb-10 space-y-11 px-10">
+        <LogoLoop
+          logos={techLogos}
+          speed={40}
+          direction="left"
+          logoHeight={35}
+          gap={45}
+          pauseOnHover
+          scaleOnHover
+          fadeOut={true}
+          fadeOutColor={fadeOutColor}
+          ariaLabel="Technologies & Skills"
+        />
+      </Wrapper>
     </section>
   );
 };
