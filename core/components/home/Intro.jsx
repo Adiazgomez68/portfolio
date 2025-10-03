@@ -42,6 +42,7 @@ const Intro = () => {
     <section id="intro" className="pt-24 md:pt-36 md:pb-24 relative">
       {mounted && (
         <div
+          className="hidden lg:block"
           style={{ width: "100%", height: "100%", position: "absolute", top: "0", zIndex: "20" }}
         >
           <Particles
