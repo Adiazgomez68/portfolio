@@ -1,4 +1,4 @@
-import { Email, Github, LinkedIn } from "../icons/SolciaMedias";
+import { Email, Github, LinkedIn, WhatsApp } from "../icons/SolciaMedias";
 import Wrapper from "../Wrapper";
 
 const Footer = () => {
@@ -8,6 +8,7 @@ const Footer = () => {
         <div className="space-x-5 justify-center items-center flex">
           <LinkedIn className="hover:text-secondary text-gray-600 duration-300 dark:hover:text-primary dark:text-secondary hover:text- hover:-translate-y-1" />
           <Github className="text-gray-600 duration-300 dark:text-secondary dark:hover:text-primary hover:text-secondary hover:-translate-y-1" />
+          <WhatsApp className="text-gray-600 dark:text-secondary duration-300 dark:hover:text-primary hover:-translate-y-1 hover:text-secondary" />
           <Email className="text-gray-600 dark:text-secondary duration-300 dark:hover:text-primary hover:-translate-y-1 hover:text-secondary" />
         </div>
         <p className="w-full text-center font-inconsolada text-gray-700 dark:text-secondary text-xs md:text-sm">
