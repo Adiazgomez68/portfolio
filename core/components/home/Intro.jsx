@@ -67,12 +67,17 @@ const Intro = () => {
               speed={1}
               chaos={0.6}
               thickness={2}
+              className="hidden lg:block"
               style={{ borderRadius: "100%", width: "180px", height: "180px" }}
             >
               <div className="rounded-full border-2 border-primary-light dark:border-primary size-[180px] relative top-0.5">
                 <Image src="/images/photo.jpeg" width={180} height={180} className="rounded-full" />
               </div>
             </ElectricBorder>
+
+            <div className="rounded-full border-2 border-primary-light dark:border-primary size-[180px] relative top-0.5 lg:hidden block">
+              <Image src="/images/photo.jpeg" width={180} height={180} className="rounded-full" />
+            </div>
           </div>
 
           <h1 className="text-5xl flex flex-col items-center justify-center md:text-6xl font-semibold mb-6 animate-fade-in-up">
