@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import { Download, Email, Github, LinkedIn } from "./icons/SolciaMedias";
+import { Download, Email, Github, LinkedIn, WhatsApp } from "./icons/SolciaMedias";
 import Wrapper from "./Wrapper";
 import { twMerge } from "tailwind-merge";
+import CircularText from "../motions/CircularText";
 
 const Media = () => {
   const [styles, setStyles] = useState();
@@ -35,6 +36,7 @@ const Media = () => {
         <div className="space-y-5 flex-col flex">
           <LinkedIn className="text-gray-600 hover:text-secondary dark:text-secondary duration-300 dark:hover:text-primary hover:-translate-y-1" />
           <Github className="text-gray-600 hover:text-secondary dark:text-secondary duration-300 dark:hover:text-primary hover:-translate-y-1" />
+          <WhatsApp className="text-gray-600 hover:text-secondary dark:text-secondary duration-300 dark:hover:text-primary hover:-translate-y-1" />
           <Email className="text-gray-600 hover:text-secondary dark:text-secondary duration-300 dark:hover:text-primary hover:-translate-y-1" />
         </div>
         <div className="w-[1px] bg-gray-600 dark:bg-white h-40"></div>
@@ -43,7 +45,19 @@ const Media = () => {
       <div
         className={twMerge("flex flex-col items-center space-y-6 fixed right-28 bottom-0", styles)}
       >
-        <Download className="text-gray-600 hover:text-secondary dark:text-secondary duration-300 dark:hover:text-primary hover:-translate-y-1" />
+        <a href={"/docs/CV - Andrés Díaz.pdf"} download title="Descargar CV">
+          <div className="relative">
+            <CircularText
+              text="DESCARGAR*CV*DESCARGAR*CV*"
+              onHover="slowDown"
+              spinDuration={20}
+              className="!dark:font-light !size-[7rem] !font-normal"
+              letterClassName="text-xs text-black dark:text-white"
+            />
+
+            <Download className="text-gray-600 hover:text-secondary dark:text-secondary duration-300 dark:hover:text-primary absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2" />
+          </div>
+        </a>
         <div className="w-[1px] bg-gray-600 dark:bg-white h-40"></div>
       </div>
     </Wrapper>

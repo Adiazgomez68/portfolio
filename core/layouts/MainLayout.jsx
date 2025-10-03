@@ -1,8 +1,8 @@
 import Head from "next/head";
-import { useEffect } from "react";
 import Footer from "../components/shared/footer/Footer";
 import Header from "../components/shared/NavBar/Header";
 import SidebarMenu from "../components/shared/Sidebar/SidebarMenu";
+import ClickSpark from "../components/motions/ClickSpark";
 
 const MainLayout = ({ children }) => {
   return (
@@ -18,7 +18,17 @@ const MainLayout = ({ children }) => {
       <div className="relative flex flex-col w-full h-full">
         <Header />
         <SidebarMenu />
-        <div className="flex flex-col w-full my-5"> {children} </div>
+        <div className="flex flex-col w-full my-5">
+          <ClickSpark
+            sparkColor="#fff"
+            sparkSize={10}
+            sparkRadius={15}
+            sparkCount={8}
+            duration={400}
+          >
+            {children}
+          </ClickSpark>
+        </div>
         <Footer />
       </div>
     </>

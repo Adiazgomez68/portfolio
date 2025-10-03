@@ -12,7 +12,7 @@ const Experience = () => {
   return (
     <section id="experience" className="w-full">
       <Wrapper className="flex-col mb-6 mt-10 px-5 md:mt-6 lg:mt-14 items-center justify-center">
-        <h2 className="text-3xl font-semibold text-center mb-10 glow-text">
+        <h2 className="text-3xl font-semibold text-center mb-10 glow-text cursor-target">
           Experiencia Profesional
         </h2>
         <VerticalTimeline
