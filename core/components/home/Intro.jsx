@@ -67,7 +67,6 @@ const Intro = () => {
               speed={1}
               chaos={0.6}
               thickness={2}
-              className="hidden lg:block"
               style={{ borderRadius: "100%", width: "180px", height: "180px" }}
             >
               <div className="rounded-full border-2 border-primary-light dark:border-primary size-[180px] relative top-0.5">
