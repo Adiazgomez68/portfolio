@@ -45,7 +45,7 @@ const Media = () => {
       <div
         className={twMerge("flex flex-col items-center space-y-6 fixed right-28 bottom-0", styles)}
       >
-        <a href={"/docs/CV - Andrés Díaz.pdf"} download title="Descargar CV">
+        <a href={"/docs/CV___Andrés_Díaz.pdf"} target="_blank" title="Descargar CV">
           <div className="relative">
             <CircularText
               text="DESCARGAR*CV*DESCARGAR*CV*"
