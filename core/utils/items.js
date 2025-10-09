@@ -10,6 +10,7 @@ import {
   Tailwindcss,
   Typescript,
   VisualStudioCode,
+  Vuejs,
 } from "../components/shared/icons/Technologies";
 
 export const techLogos = [
@@ -17,6 +18,7 @@ export const techLogos = [
   { node: <Css3 />, title: "Css3" },
   { node: <Javascript />, title: "Javascript" },
   { node: <Typescript />, title: "Typescript" },
+  { node: <Vuejs />, title: "Vue.js" },
   { node: <ReactJs />, title: "React.js" },
   { node: <NextJs />, title: "Next.js" },
   { node: <Tailwindcss />, title: "Tailwindcss" },
