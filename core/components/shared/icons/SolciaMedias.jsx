@@ -26,11 +26,7 @@ export const Github = ({ className = "", ...rest }) => {
 
 export const LinkedIn = ({ className = "", ...rest }) => {
   return (
-    <Link
-      href="https://linkedin.com/in/andrés-díaz-gómez-50aa80229"
-      target="_blank"
-      title="LinkedIn"
-    >
+    <Link href="https://linkedin.com/in/andrés-díaz-50aa80229" target="_blank" title="LinkedIn">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
