@@ -13,7 +13,7 @@ const Intro = () => {
   const [mounted, setMounted] = useState(false);
 
   const texts = [
-    "+3 años de experiencia",
+    "+4 años de experiencia",
     "Creador de Experiencias Digitales",
     "Constructor de Interfaces",
   ];
