@@ -180,8 +180,8 @@ export const experiences = [
       },
     ],
     date: "Dic 2023",
-    job: "Desarrollador Frontend",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
+    job: "Desarrollador FullStack",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "NodeJS", "NestJs"],
     currentJob: true,
   },
   {
