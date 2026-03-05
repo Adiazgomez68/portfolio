@@ -167,16 +167,16 @@ export const experiences = [
     logo: "/images/logos/hib.png",
     functions: [
       {
-        item: "Desarrollo del sitio web para el lanzamiento de Hi Beauty en España.",
+        item: "Desarrollé el sitio web para el lanzamiento de Hi Beauty en España.",
       },
       {
-        item: "Incorporación de nuevas características clave en el sistema administrativo.",
+        item: "Incorporé nuevas características claves en el sistema administrativo.",
       },
       {
-        item: "Creación de filtros de búsqueda para la tienda online y soporte en la web de ventas por suscripción.",
+        item: "Creé filtros de búsqueda que redujeron el tiempo de navegación en la tienda online.",
       },
       {
-        item: "Implementación de nuevos métodos de pago.",
+        item: "Implementé nuevos métodos de pago simplificando el proceso de compra.",
       },
     ],
     date: "Dic 2023",
@@ -189,10 +189,10 @@ export const experiences = [
     logo: "/images/logos/parquesoft-sucre.webp",
     functions: [
       {
-        item: "Construcción desde cero de un sistema administrativo para la gestión de planes institucionales.",
+        item: "Participé en la construcción completa de un sistema administrativo para la gestión de planes institucionales.",
       },
       {
-        item: "Configuración e implementación de Google OAuth2 para un inicio de sesión seguro y eficiente.",
+        item: "Configuré e implementé Google OAuth2 para un inicio de sesión seguro y eficiente.",
       },
     ],
     date: "Mar 2023 - Dic 2024",
@@ -205,13 +205,13 @@ export const experiences = [
     logo: "/images/logos/startupslab.png",
     functions: [
       {
-        item: "Maquetación completa de una plataforma de educación en línea para emprendedores.",
+        item: "Realicé la maquetación completa de una plataforma de educación en línea para emprendedores.",
       },
       {
-        item: "Creación y despliegue de un sistema para la venta de suscripciones de tarjetas didácticas.",
+        item: "Construí y realicé el despliegue de un sistema para la venta de suscripciones de tarjetas didácticas.",
       },
       {
-        item: "Administración de despliegues y mantenimiento de sitios web en producción utilizando AWS (EC2, S3).",
+        item: "Administré los despliegues y el mantenimiento de sitios web en producción utilizando AWS (EC2, S3).",
       },
     ],
     date: "2022 - 2023",

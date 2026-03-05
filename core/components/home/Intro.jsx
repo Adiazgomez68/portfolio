@@ -15,7 +15,7 @@ const Intro = () => {
   const texts = [
     "+4 años de experiencia",
     "Creador de Experiencias Digitales",
-    "Constructor de Interfaces",
+    "Constructor de Aplicaciones Web",
   ];
 
   useEffect(() => {
@@ -94,7 +94,7 @@ const Intro = () => {
               className="text-foreground"
             />
             <BlurText
-              text="Desarrollador Frontend"
+              text="Frontend Developer"
               delay={150}
               animateBy="words"
               direction="bottom"
