@@ -163,6 +163,19 @@ export const otherProjects = [
 
 export const experiences = [
   {
+    company: "MotoSmart",
+    logo: "/images/logos/motosmart.png",
+    functions: [
+      {
+        item: "Construyo la interfaz y la lógica del sistema administrativo para trámites de matrícula, definiendo patrones de diseño y componentes reutilizables en el frontend.",
+      },
+    ],
+    date: "Mar 2026",
+    job: "Desarrollador Frontend Semi-Senior",
+    technologies: ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "Bun.js", "React Native"],
+    currentJob: true,
+  },
+  {
     company: "Hi Beauty",
     logo: "/images/logos/hib.png",
     functions: [
@@ -179,10 +192,10 @@ export const experiences = [
         item: "Implementé nuevos métodos de pago simplificando el proceso de compra.",
       },
     ],
-    date: "Dic 2023",
+    date: "Dic 2023 - Mar 2026",
     job: "Desarrollador Frontend",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
-    currentJob: true,
+    currentJob: false,
   },
   {
     company: "Parquesoft Sucre",
