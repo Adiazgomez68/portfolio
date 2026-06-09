@@ -8,10 +8,10 @@ const Media = () => {
   const [styles, setStyles] = useState();
 
   useEffect(() => {
-    if (typeof window === "undefined") return;
+    if (typeof globalThis === "undefined") return;
 
     const handleScroll = () => {
-      const shouldAnimate = window.scrollY >= 50;
+      const shouldAnimate = globalThis.scrollY >= 50;
 
       if (shouldAnimate) {
         setStyles("animate-fade-down");
@@ -21,8 +21,8 @@ const Media = () => {
     };
 
     handleScroll();
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
+    globalThis.addEventListener("scroll", handleScroll, { passive: true });
+    return () => globalThis.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
@@ -45,7 +45,7 @@ const Media = () => {
       <div
         className={twMerge("flex flex-col items-center space-y-6 fixed right-28 bottom-0", styles)}
       >
-        <a href={"/docs/CV___Andrés_Díaz.pdf"} target="_blank" title="Descargar CV">
+        <a href={"/docs/CV___Andrés_Díaz__FS.pdf"} target="_blank" title="Descargar CV">
           <div className="relative">
             <CircularText
               text="DESCARGAR*CV*DESCARGAR*CV*"

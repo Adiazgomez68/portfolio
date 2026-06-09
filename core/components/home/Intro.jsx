@@ -94,7 +94,7 @@ const Intro = () => {
               className="text-foreground"
             />
             <BlurText
-              text="Frontend Developer"
+              text="FullStack Developer"
               delay={150}
               animateBy="words"
               direction="bottom"
