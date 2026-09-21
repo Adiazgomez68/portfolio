@@ -167,7 +167,10 @@ export const experiences = [
     logo: "/images/logos/motosmart.png",
     functions: [
       {
-        item: "Construyo la interfaz y la lógica del sistema administrativo para trámites de matrícula, definiendo patrones de diseño y componentes reutilizables en el frontend.",
+        item: "Desarrollé sistema administrativo con componentes reutilizables, formularios dinámicos y validaciones complejas, integrando APIs para consulta y sincronización de datos vehiculares.",
+      },
+      {
+        item: "Construí interfaz de rastreo en tiempo real con mapas interactivos (Leaflet), geocercas, alertas personalizadas y controles remotos, implementando actualizaciones con WebSockets.",
       },
     ],
     date: "Mar 2026",
